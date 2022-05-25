@@ -1,0 +1,27 @@
+# Files
+*.exe
+*.launch
+*.ld
+credentials.json
+token.pickle
+.cproject
+.project
+
+# Book code
+Data Files/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+.vscode/
+dev/
+*_repo/
+*_code/
+__pycache__/
+
+# STM32
+.metadata/
+.settings/
+CMSIS/
+Debug/
+Startup/
