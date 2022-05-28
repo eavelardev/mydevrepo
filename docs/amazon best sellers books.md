@@ -1,42 +1,39 @@
 
-## Best Sellers in
+## Amazon Books
 
-<!-- - [](https://www.amazon.com/gp/bestsellers/books/) -->
-
-- [Computers & Technology](https://www.amazon.com/gp/bestsellers/books/5)
-    - [Computer Science](https://www.amazon.com/gp/bestsellers/books/3508)
-        - [AI & Machine Learning](https://www.amazon.com/gp/bestsellers/books/3887)
-            - [Intelligence & Semantics](https://www.amazon.com/gp/bestsellers/books/280291)
-            - [Machine Theory](https://www.amazon.com/gp/bestsellers/books/280292)
-            - [Natural Language Processing](https://www.amazon.com/gp/bestsellers/books/271581011)
-            - [Natural Networks](https://www.amazon.com/gp/bestsellers/books/3896)
-    - [Databases & Big Data](https://www.amazon.com/gp/bestsellers/books/549646)
-        - [Data Processing](https://www.amazon.com/gp/bestsellers/books/10806588011)
-        - [Data Mining](https://www.amazon.com/gp/bestsellers/books/3654)
-    - [Programming](https://www.amazon.com/gp/bestsellers/books/3839)
-        - [Algorithms](https://www.amazon.com/gp/bestsellers/books/3870)
-            - [Data Structures](https://www.amazon.com/gp/bestsellers/books/132570011)
-        - [Introductory & Beginning](https://www.amazon.com/gp/bestsellers/books/3944)
-        - [Software Design, Testing & Engineering](https://www.amazon.com/gp/bestsellers/books/4011)
-            - [Object-Oriented Design](https://www.amazon.com/gp/bestsellers/books/4013)
-            - [Software Development](https://www.amazon.com/gp/bestsellers/books/4016)
-    - [Programming Languages](https://www.amazon.com/gp/bestsellers/books/3952)
-        - [C & C++](https://www.amazon.com/gp/bestsellers/books/3956)
-            - [C](https://www.amazon.com/gp/bestsellers/books/9045759011)
-            - [C++](https://www.amazon.com/gp/bestsellers/books/9045760011)
-        - [Python](https://www.amazon.com/gp/bestsellers/books/285856)
-    - [Software](https://www.amazon.com/gp/bestsellers/books/4053)
-        - [Enterprise Applications](https://www.amazon.com/gp/bestsellers/books/10806628011)
-            - [Business Intelligence Tools](https://www.amazon.com/gp/bestsellers/books/10806629011)
-        - [Mathematical & Statistical Software](https://www.amazon.com/gp/bestsellers/books/271582011)
-- [Business & Money](https://www.amazon.com/gp/bestsellers/books/271577011)
-    - [Industries](https://www.amazon.com/gp/bestsellers/books/2624)
-        - [Computers & Technology](https://www.amazon.com/gp/bestsellers/books/886498) 
-    - [Management & Leadership](https://www.amazon.com/gp/bestsellers/books/2675)
-        - [Information Management](https://www.amazon.com/gp/bestsellers/books/2648)
-        - [Production & Operations](https://www.amazon.com/gp/bestsellers/books/2691)
-    - [Skills](https://www.amazon.com/gp/bestsellers/books/355562011)
-        - [Business Mathematics](https://www.amazon.com/gp/bestsellers/books/271577011)
-- [Science & Math](https://www.amazon.com/gp/bestsellers/books/75)
-    - [Mathematics](https://www.amazon.com/gp/bestsellers/books/13884)
-<!-- - [](https://www.amazon.com/gp/bestsellers/books/) -->
+- Computers & Technology - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/5), [New Releases](https://www.amazon.com/gp/new-releases/books/5)]
+    - Computer Science - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/3508), [New Releases](https://www.amazon.com/gp/new-releases/books/3508)]
+        - AI & Machine Learning - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/3887), [New Releases](https://www.amazon.com/gp/new-releases/books/3887)]
+            - Intelligence & Semantics - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/280291), [New Releases](https://www.amazon.com/gp/new-releases/books/280291)]
+            - Machine Theory - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/280292), [New Releases](https://www.amazon.com/gp/new-releases/books/280292)]
+            - Natural Language Processing - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/271581011), [New Releases](https://www.amazon.com/gp/new-releases/books/271581011)]
+            - Natural Networks - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/3896), [New Releases](https://www.amazon.com/gp/new-releases/books/3896)]
+    - Databases & Big Data - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/549646), [New Releases](https://www.amazon.com/gp/new-releases/books/549646)]
+        - Data Processing - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/10806588011), [New Releases](https://www.amazon.com/gp/new-releases/books/10806588011)]
+        - Data Mining - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/3654), [New Releases](https://www.amazon.com/gp/new-releases/books/3654)]
+    - Programming - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/3839), [New Releases](https://www.amazon.com/gp/new-releases/books/3839)]
+        - Algorithms - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/3870), [New Releases](https://www.amazon.com/gp/new-releases/books/3870)]
+            - Data Structures - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/132570011), [New Releases](https://www.amazon.com/gp/new-releases/books/132570011)]
+        - Introductory & Beginning - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/3944), [New Releases](https://www.amazon.com/gp/new-releases/books/3944)]
+        - Software Design, Testing & Engineering - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/4011), [New Releases](https://www.amazon.com/gp/new-releases/books/4011)]
+            - Object-Oriented Design - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/4013), [New Releases](https://www.amazon.com/gp/new-releases/books/4013)]
+            - Software Development - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/4016), [New Releases](https://www.amazon.com/gp/new-releases/books/4016)]
+    - Programming Languages - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/3952), [New Releases](https://www.amazon.com/gp/new-releases/books/3952)]
+        - C & C++ - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/3956), [New Releases](https://www.amazon.com/gp/new-releases/books/3956)]
+            - C - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/9045759011), [New Releases](https://www.amazon.com/gp/new-releases/books/9045759011)]
+            - C++ - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/9045760011), [New Releases](https://www.amazon.com/gp/new-releases/books/9045760011)]
+        - Python - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/285856), [New Releases](https://www.amazon.com/gp/new-releases/books/285856)]
+    - Software - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/4053), [New Releases](https://www.amazon.com/gp/new-releases/books/4053)]
+        - Enterprise Applications - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/10806628011), [New Releases](https://www.amazon.com/gp/new-releases/books/10806628011)]
+            - Business Intelligence Tools - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/10806629011), [New Releases](https://www.amazon.com/gp/new-releases/books/10806629011)]
+        - Mathematical & Statistical Software - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/271582011), [New Releases](https://www.amazon.com/gp/new-releases/books/271582011)]
+- Business & Money - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/3), [New Releases](https://www.amazon.com/gp/new-releases/books/3)]
+    - Industries - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/2624), [New Releases](https://www.amazon.com/gp/new-releases/books/2624)]
+        - Computers & Technology - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/886498), [New Releases](https://www.amazon.com/gp/new-releases/books/886498) 
+    - Management & Leadership - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/2675), [New Releases](https://www.amazon.com/gp/new-releases/books/2675)]
+        - Information Management - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/2648), [New Releases](https://www.amazon.com/gp/new-releases/books/2648)]
+        - Production & Operations - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/2691), [New Releases](https://www.amazon.com/gp/new-releases/books/2691)]
+    - Skills - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/355562011), [New Releases](https://www.amazon.com/gp/new-releases/books/355562011)]
+        - Business Mathematics - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/271577011), [New Releases](https://www.amazon.com/gp/new-releases/books/271577011)]
+- Science & Math - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/75), [New Releases](https://www.amazon.com/gp/new-releases/books/75)]
+    - Mathematics - [[Best Sellers](https://www.amazon.com/gp/bestsellers/books/13884), [New Releases](https://www.amazon.com/gp/new-releases/books/13884)]
