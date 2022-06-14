@@ -1,7 +1,7 @@
 import os
 
-path = ""
-sub_ext = ".vtt"
+path = r""
+sub_ext = ".srt"
 lang_keep = "en"
 
 for root, _, files in os.walk(path):
