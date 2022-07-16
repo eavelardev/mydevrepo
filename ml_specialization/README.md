@@ -34,4 +34,19 @@ Notebooks
         - C1_W3_Lab08_Overfitting_Soln (2/23/2022)
         - C1_W3_Lab09_Regularization_Soln  (6/25/2022)
         - C1_W3_Logistic_Regression (6/13/2022)
+- Advanced Learning Algorithms
+    - week 1
+        - C2_W1_Lab01_Neurons_and_Layers (6/13/2022)
+        - C2_W1_Lab02_CoffeeRoasting_TF (6/13/2022)
+        - C2_W1_Lab03_CoffeeRoasting_Numpy (5/21/2022)
+        - C2_W1_Assignment (6/13/2022)
+    - week 2
+        - C2_W2_Relu (6/13/2022)
+        - C2_W2_SoftMax (6/26/2022)
+        - C2_W2_Multiclass_TF (5/22/2022)
+        - C2_W2_Assignment (7/9/2022)
+    - week 3
+        - C2_W3_Assignment (6/18/2022)
+    - week 4
+        - C2_W4_Decision_Tree_with_Markdown (7/11/2022)
 
