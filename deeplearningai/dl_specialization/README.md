@@ -15,3 +15,5 @@ Notebooks
     - week 2
         - Python_Basics_with_Numpy (3/28/2022)
         - Logistic_Regression_with_a_Neural_Network_mindset (3/28/2022)
+    - week 3
+        - Planar_data_classification_with_one_hidden_layer (5/11/2022)
