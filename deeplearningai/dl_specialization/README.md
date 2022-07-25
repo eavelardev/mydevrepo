@@ -12,11 +12,11 @@ Courses
 
 Notebooks
 - Neural Networks and Deep Learning
-    - week 2
+    - W2 - Neural Networks Basics
         - Python_Basics_with_Numpy (3/28/2022)
         - Logistic_Regression_with_a_Neural_Network_mindset (3/28/2022)
-    - week 3
+    - W3 - Shallow Neural Networks
         - Planar_data_classification_with_one_hidden_layer (5/11/2022)
-    - week 4
+    - W4 Deep Neural Networks
         - Building_your_Deep_Neural_Network_Step_by_Step (7/20/2022)
         - Deep Neural Network - Application (3/28/2022)

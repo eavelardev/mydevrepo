@@ -10,20 +10,20 @@ Courses
 
 Notebooks
 - Supervised Machine Learning: Regression and Classification
-    - week 1
+    - W1 - Introduction to Machine Learning
         - C1_W1_Lab01_Python_Jupyter_Soln (10/4/2021)
         - C1_W1_Lab02_Course_Preview_Soln (10/4/2021)
         - C1_W1_Lab03_Model_Representation_Soln (3/7/2022)
         - C1_W1_Lab04_Cost_function_Soln (3/7/2022)
         - C1_W1_Lab05_Gradient_Descent_Soln (3/8/2022)
-    - week 2
+    - W2 - Regression with multiple input variables
         - C1_W2_Lab01_Python_Numpy_Vectorization_Soln (10/4/2021)
         - C1_W2_Lab02_Multiple_Variable_Soln (10/9/2021)
         - C1_W2_Lab03_Feature_Scaling_and_Learning_Rate_Soln (10/4/2021)
         - C1_W2_Lab04_FeatEng_PolyReg_Soln (10/4/2021)
         - C1_W2_Lab05_Sklearn_GD_Soln (10/4/2021)
         - C1_W2_Linear_Regression (7/1/2022)
-    - week 3
+    - W3 - Classification
         - C1_W3_Lab01_Classification_Soln (2/23/2022)
         - C1_W3_Lab02_Sigmoid_function_Soln (2/23/2022)
         - C1_W3_Lab03_Decision_Boundary_Soln (2/23/2022)
@@ -35,18 +35,18 @@ Notebooks
         - C1_W3_Lab09_Regularization_Soln  (6/25/2022)
         - C1_W3_Logistic_Regression (6/13/2022)
 - Advanced Learning Algorithms
-    - week 1
+    - W1 - Neural Networks
         - C2_W1_Lab01_Neurons_and_Layers (6/13/2022)
         - C2_W1_Lab02_CoffeeRoasting_TF (6/13/2022)
         - C2_W1_Lab03_CoffeeRoasting_Numpy (5/21/2022)
         - C2_W1_Assignment (6/13/2022)
-    - week 2
+    - W2 - Neural network training
         - C2_W2_Relu (6/13/2022)
         - C2_W2_SoftMax (6/26/2022)
         - C2_W2_Multiclass_TF (5/22/2022)
         - C2_W2_Assignment (7/9/2022)
-    - week 3
+    - W3 - Advice for applying machine learning
         - C2_W3_Assignment (6/18/2022)
-    - week 4
+    - W4 - Decision trees
         - C2_W4_Decision_Tree_with_Markdown (7/11/2022)
 
