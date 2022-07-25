@@ -10,7 +10,7 @@
 | mls_2.3     | 09 July      |:heavy_check_mark:|
 | dls_1.3     | 10 July      |:heavy_check_mark:|
 | mls_2.4     | 11 July      |:heavy_check_mark:|
-| dts_1.1     | 12 July      |           |
+| dts_1.1     | 12 July      |:heavy_check_mark:|
 | mlc_1.1     | 13 July      |:heavy_check_mark:|
 | mlc_1.2     | 14 July      |:heavy_check_mark:|
 | dls_1.4     | 15 July      |:heavy_check_mark:|
