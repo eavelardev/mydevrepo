@@ -11,7 +11,7 @@ Courses
 5. Sequence Models (4 weeks) - [link](https://www.coursera.org/learn/nlp-sequence-models)
 
 Notebooks
-- Neural Networks and Deep Learning
+1. Neural Networks and Deep Learning
     - W2 - Neural Networks Basics
         - Python_Basics_with_Numpy (3/28/2022)
         - Logistic_Regression_with_a_Neural_Network_mindset (3/28/2022)
@@ -20,3 +20,8 @@ Notebooks
     - W4 Deep Neural Networks
         - Building_your_Deep_Neural_Network_Step_by_Step (7/20/2022)
         - Deep Neural Network - Application (3/28/2022)
+2. Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization
+    - W1 - Practical Aspects of Deep Learning
+        - Initialization (3/28/2022)
+        - Regularization (3/28/2022)
+        - Gradient_Checking (3/28/2022)
