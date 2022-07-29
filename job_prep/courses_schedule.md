@@ -21,7 +21,7 @@
 | mlc_3.1     | 20 July      |:heavy_check_mark:|
 | dts_2.1     | 21 July      |:heavy_check_mark:|
 | mlc_3.2     | 22 July      |:heavy_check_mark:|
-| dls_2.2     | 23 July      |           |
+| dls_2.2     | 23 July      |:heavy_check_mark:|
 | mlc_3.3     | 24 July      |:heavy_check_mark:|
 | mlc_4.1     | 25 July      |:heavy_check_mark:|
 | dls_2.3     | 26 July      |           |

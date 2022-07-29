@@ -9,7 +9,7 @@ Courses
 3. Unsupervised Learning, Recommenders, Reinforcement Learning [link](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning)
 
 Notebooks
-- Supervised Machine Learning: Regression and Classification
+- 1. Supervised Machine Learning: Regression and Classification
     - W1 - Introduction to Machine Learning
         - C1_W1_Lab01_Python_Jupyter_Soln (10/4/2021)
         - C1_W1_Lab02_Course_Preview_Soln (10/4/2021)
@@ -34,7 +34,7 @@ Notebooks
         - C1_W3_Lab08_Overfitting_Soln (2/23/2022)
         - C1_W3_Lab09_Regularization_Soln  (6/25/2022)
         - C1_W3_Logistic_Regression (6/13/2022)
-- Advanced Learning Algorithms
+- 2. Advanced Learning Algorithms
     - W1 - Neural Networks
         - C2_W1_Lab01_Neurons_and_Layers (6/13/2022)
         - C2_W1_Lab02_CoffeeRoasting_TF (6/13/2022)
@@ -49,4 +49,13 @@ Notebooks
         - C2_W3_Assignment (6/18/2022)
     - W4 - Decision trees
         - C2_W4_Decision_Tree_with_Markdown (7/11/2022)
-
+- 3. Unsupervised Learning, Recommenders, Reinforcement Learning
+    - W1 - Unsupervised learning
+        - C3_W1_KMeans_Assignment (7/27/2022)
+        - C3_W1_Anomaly_Detection (7/27/2022)
+    - W2 - Recommender systems
+        - C3_W2_Collaborative_RecSys_Assignment  (7/27/2022)
+        - C3_W2_RecSysNN_Assignment (7/27/2022)
+    - W3 - Reinforcement learning
+        - State-action value function example (7/27/2022)
+        - C3_W3_A1_Assignment (7/27/2022)
