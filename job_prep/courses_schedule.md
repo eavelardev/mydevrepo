@@ -24,11 +24,11 @@
 | dls_2.2     | 23 July      |:heavy_check_mark:|
 | mlc_3.3     | 24 July      |:heavy_check_mark:|
 | mlc_4.1     | 25 July      |:heavy_check_mark:|
-| dls_2.3     | 26 July      |           |
+| dls_2.3     | 26 July      |:heavy_check_mark:|
 | mlc_4.2     | 27 July      |:heavy_check_mark:|
 | mlc_4.3     | 28 July      |:heavy_check_mark:|
-| dls_3.1     | 29 July      |           |
-| mlc_5.1     | 30 July      |           |
+| dls_3.1     | 29 July      |:heavy_check_mark:|
+| mlc_5.1     | 30 July      |:heavy_check_mark:|
 | mlc_5.2     | 31 July      |           |
 | dts_3.1     | 01 August    |           |
 | mlc_5.3     | 02 August    |           |

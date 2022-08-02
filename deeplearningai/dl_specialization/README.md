@@ -25,3 +25,5 @@ Notebooks
         - Initialization (3/28/2022)
         - Regularization (3/28/2022)
         - Gradient_Checking (3/28/2022)
+        - Optimization_methods (3/28/2022)
+        - Tensorflow_introduction (5/11/2022)
