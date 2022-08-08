@@ -33,9 +33,9 @@
 | dts_3.1     | 01 August    |:heavy_check_mark:|
 | mlc_5.3     | 02 August    |:heavy_check_mark:|
 | dls_3.2     | 03 August    |:heavy_check_mark:|
-| mlc_6.1     | 04 August    |           |
-| mlc_6.2     | 05 August    |           |
-| mlc_6.3     | 06 August    |           |
+| mlc_6.1     | 04 August    |:heavy_check_mark:|
+| mlc_6.2     | 05 August    |:heavy_check_mark:|
+| mlc_6.3     | 06 August    |:heavy_check_mark:|
 | dls_4.1     | 07 August    |           |
 | mlc_7.1     | 08 August    |           |
 | dls_4.2     | 09 August    |           |
