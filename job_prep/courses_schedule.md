@@ -36,11 +36,11 @@
 | mlc_6.1     | 04 August    |:heavy_check_mark:|
 | mlc_6.2     | 05 August    |:heavy_check_mark:|
 | mlc_6.3     | 06 August    |:heavy_check_mark:|
-| dls_4.1     | 07 August    |           |
-| mlc_7.1     | 08 August    |           |
-| dls_4.2     | 09 August    |           |
-| mlc_7.2     | 10 August    |           |
-| mlc_7.3     | 11 August    |           |
+| dls_4.1     | 07 August    |:heavy_check_mark:|
+| mlc_7.1     | 08 August    |:heavy_check_mark:|
+| dls_4.2     | 09 August    |:heavy_check_mark:|
+| mlc_7.2     | 10 August    |:heavy_check_mark:|
+| mlc_7.3     | 11 August    |:heavy_check_mark:|
 | dts_3.2     | 12 August    |           |
 | mlc_8.1     | 13 August    |           |
 | dls_4.3     | 14 August    |           |

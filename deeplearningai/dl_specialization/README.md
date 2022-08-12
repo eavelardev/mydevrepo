@@ -27,3 +27,12 @@ Notebooks
         - Gradient_Checking (3/28/2022)
         - Optimization_methods (3/28/2022)
         - Tensorflow_introduction (5/11/2022)
+4. Convolutional Neural Networks
+    - W1 - Foundations of Convolutional Neural Networks
+        - Convolution_model_Step_by_Step_v1 (4/19/2022)
+        - Convolution_model_Application (3/28/2022)
+    - W2 - Deep Convolutional Models: Case Studies
+        - Residual_Networks (6/29/2022)
+        - ransfer_learning_with_MobileNet_v1 (8/10/2022)
+    - W3 - Object Detection
+    - W4 - Special Applications: Face recognition & Neural Style Transfer
