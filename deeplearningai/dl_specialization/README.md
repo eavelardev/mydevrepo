@@ -33,6 +33,8 @@ Notebooks
         - Convolution_model_Application (3/28/2022)
     - W2 - Deep Convolutional Models: Case Studies
         - Residual_Networks (6/29/2022)
-        - ransfer_learning_with_MobileNet_v1 (8/10/2022)
+        - Transfer_learning_with_MobileNet_v1 (8/10/2022)
     - W3 - Object Detection
+        - Autonomous_driving_application_Car_detection (3/28/2022)
+        - Image_segmentation_Unet_v2 (3/28/2022)
     - W4 - Special Applications: Face recognition & Neural Style Transfer
