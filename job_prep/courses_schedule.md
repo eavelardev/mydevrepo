@@ -46,9 +46,9 @@
 | dls_4.3     | 14 August    |:heavy_check_mark:|
 | mlc_8.2     | 15 August    |:heavy_check_mark:|
 | mlc_8.3     | 16 August    |:heavy_check_mark:|
-| mlc_9.1     | 17 August    |           |
-| dls_4.4     | 18 August    |           |
-| mlc_9.2     | 19 August    |           |
+| mlc_9.1     | 17 August    |:heavy_check_mark:|
+| dls_4.4     | 18 August    |:heavy_check_mark:|
+| mlc_9.2     | 19 August    |:heavy_check_mark:|
 | mlc_9.3     | 20 August    |           |
 | dls_5.1     | 21 August    |           |
 | mlc_9.4     | 22 August    |           |

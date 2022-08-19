@@ -38,3 +38,5 @@ Notebooks
         - Autonomous_driving_application_Car_detection (3/28/2022)
         - Image_segmentation_Unet_v2 (3/28/2022)
     - W4 - Special Applications: Face recognition & Neural Style Transfer
+        - Face_Recognition.ipynb (3/28/2022)
+        - Art_Generation_with_Neural_Style_Transfer (8/16/2022)
