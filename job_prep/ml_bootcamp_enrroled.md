@@ -153,7 +153,7 @@ Advanced
 **Books**
 - **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow**, 3rd Edition [link](https://www.amazon.com/dp/1098125975)
 - **Python for Data Analysis**, 3rd Edition [link](https://www.amazon.com/dp/109810403X) : Data Wrangling with pandas, NumPy, and Jupyter
-- **Deep Learning with Python**, Second Edition [link](https://www.amazon.com/dp/1617296864)
+- **Deep Learning with Python**, 2nd Edition [link](https://www.amazon.com/dp/1617296864)
 - **Becoming a Data Head**, [link](https://www.amazon.com/dp/1119741742) : How to Think, Speak and Understand Data Science, Statistics and Machine Learning
 - **Machine Learning with PyTorch and Scikit-Learn**, [link](https://www.amazon.com/dp/1801819319) : Develop machine learning and deep learning models with Python
 - **Effective Pandas**, [link](https://www.amazon.com/dp/B09MYXXSFM) : Patterns for Data Manipulation
