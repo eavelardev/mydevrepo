@@ -67,7 +67,6 @@ Google Developers
     4. Building Resilient Streaming Analytics Systems on Google Cloud (2 weeks) [link](https://www.coursera.org/learn/streaming-analytics-systems-gcp)
     5. Smart Analytics, Machine Learning, and AI on GCP (2 weeks) [link](https://www.coursera.org/learn/smart-analytics-machine-learning-ai-gcp)
     6. Preparing for the Google Cloud Professional Data Engineer Exam (6 weeks) [link](https://www.coursera.org/learn/preparing-cloud-professional-data-engineer-exam)
-
 - Google - **Google Data Analytics Professional Certificate** - [link](https://www.coursera.org/professional-certificates/google-data-analytics)
     1. Foundations: Data, Data, Everywhere (5 weeks) [link](https://www.coursera.org/learn/foundations-data)
     2. Ask Questions to Make Data-Driven Decisions (4 weeks) [link](https://www.coursera.org/learn/ask-questions-make-decisions)
@@ -77,13 +76,11 @@ Google Developers
     6. Share Data Through the Art of Visualization (4 weeks) [link](https://www.coursera.org/learn/visualize-data)
     7. Data Analysis with R Programming (5 weeks) [link](https://www.coursera.org/learn/data-analysis-r)
     8. Google Data Analytics Capstone: Complete a Case Study (4 weeks) [link](https://www.coursera.org/learn/google-data-analytics-capstone)
-
 - IBM - **Introduction to Data Science Specialization** - [link](https://www.coursera.org/specializations/introduction-data-science)
     1. What is Data Science? (3 weeks) [link](https://www.coursera.org/learn/what-is-datascience)
     2. Tools for Data Science (4 weeks) [link](https://www.coursera.org/learn/open-source-tools-for-data-science)
     3. ~~Data Science Methodology~~ (3 weeks) [link](https://www.coursera.org/learn/data-science-methodology)
     4. Databases and SQL for Data Science with Python (6 weeks) [link](https://www.coursera.org/learn/sql-data-science)
-
 - University of Michigan - **Applied Data Science with Python Specialization** - [link](https://www.coursera.org/specializations/data-science-python)
     1. Introduction to Data Science in Python (4 weeks) [link](https://www.coursera.org/learn/python-data-analysis)
     2. ~~Applied Plotting, Charting & Data Representation in Python~~ (4 weeks) [link](https://www.coursera.org/learn/python-plotting)
@@ -104,12 +101,10 @@ Google Developers
     1. `Supervised Machine Learning: Regression and Classification` (3 weeks) [link](https://www.coursera.org/learn/machine-learning)
     2. `Advanced Learning Algorithms` (4 weeks) [link](https://www.coursera.org/learn/advanced-learning-algorithms)
     3. `Unsupervised Learning, Recommenders, Reinforcement Learning` (3 weeks) [link](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning)
-    
 - Google Cloud - **Digital Transformation Using AI/ML with Google Cloud Specialization** - [link](https://www.coursera.org/specializations/digital-transformation-using-ai-ml-with-google-cloud)
     1. `Business Transformation with Google Cloud` (1 week) [link](https://www.coursera.org/learn/business-transformation-google-cloud)
     2. `Infrastructure and Application Modernization with Google Cloud` (1 week) [link](https://www.coursera.org/learn/google-cloud-product-fundamentals)
     3. Managing Machine Learning Projects with Google Cloud (4 weeks) [link](https://www.coursera.org/learn/machine-learning-business-professionals)
-
 - Google Cloud - **Preparing for Google Cloud Certification: Machine Learning Engineer Professional Certificate** - [link](https://www.coursera.org/professional-certificates/preparing-for-google-cloud-machine-learning-engineer-professional-certificate) ([certficate](https://www.coursera.org/account/accomplishments/specialization/certificate/S2NAHWTM38AR))
     1. `Google Cloud Big Data and Machine Learning Fundamentals` (2 weeks) [link](https://www.coursera.org/learn/gcp-big-data-ml-fundamentals)
     2. `How Google does Machine Learning` (3 weeks) [link](https://www.coursera.org/learn/google-machine-learning)
@@ -120,36 +115,30 @@ Google Developers
     7. `Production Machine Learning Systems` (3 weeks) [link](https://www.coursera.org/learn/gcp-production-ml-systems)
     8. `MLOps (Machine Learning Operations) Fundamentals` (3 weeks) [link](https://www.coursera.org/learn/mlops-fundamentals)
     9. `ML Pipelines on Google Cloud` (4 weeks) [link](https://www.coursera.org/learn/ml-pipelines-google-cloud)
-
 - Google Cloud - **Advanced Machine Learning on Google Cloud Specialization** - [link](https://www.coursera.org/specializations/advanced-machine-learning-tensorflow-gcp)
     1. End-to-End Machine Learning with TensorFlow on Google Cloud (3 weeks) [link](https://www.coursera.org/learn/end-to-end-ml-tensorflow-gcp)
     2. `Production Machine Learning Systems` (3 weeks) [link](https://www.coursera.org/learn/gcp-production-ml-systems)
     3. Computer Vision Fundamentals with Google Cloud (2 weeks) [link](https://www.coursera.org/learn/image-understanding-tensorflow-gcp)
     4. Sequence Models for Time Series and Natural Language Processing (2 weeks) [link](https://www.coursera.org/learn/sequence-models-tensorflow-gcp)
     5. Recommendation Systems with TensorFlow on GCP (2 weeks) [link](https://www.coursera.org/learn/recommendation-models-gcp)
-
 - DeepLearning.AI - **Machine Learning Engineering for Production (MLOps) Specialization** - [link](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops)
     1. Introduction to Machine Learning in Production (3 weeks) [link](https://www.coursera.org/learn/introduction-to-machine-learning-in-production)
     2. Machine Learning Data Lifecycle in Production (4 weeks) [link](https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production)
     3. Machine Learning Modeling Pipelines in Production (5 weeks) [link](https://www.coursera.org/learn/machine-learning-modeling-pipelines-in-production)
     4. Deploying Machine Learning Models in Production (4 weeks) [link](https://www.coursera.org/learn/deploying-machine-learning-models-in-production)
-
 - DeepLearning.AI - **Natural Language Processing Specialization** - [link](https://www.coursera.org/specializations/natural-language-processing)
     1. `Natural Language Processing with Classification and Vector Spaces` (4 weeks) [link](https://www.coursera.org/learn/classification-vector-spaces-in-nlp)
     2. `Natural Language Processing with Probabilistic Models` (4 weeks) [link](https://www.coursera.org/learn/probabilistic-models-in-nlp)
     3. Natural Language Processing with Sequence Models (4 weeks) [link](https://www.coursera.org/learn/sequence-models-in-nlp)
     4. Natural Language Processing with Attention Models (4 weeks) [link](https://www.coursera.org/learn/attention-models-in-nlp)
-
 - DeepLearning.AI - **AI for Medicine Specialization** - [link](https://www.coursera.org/specializations/ai-for-medicine)
     1. AI for Medical Diagnosis (3 weeks) [link](https://www.coursera.org/learn/ai-for-medical-diagnosis)
     2. AI for Medical Prognosis (4 weeks) [link](https://www.coursera.org/learn/ai-for-medical-prognosis)
     3. AI For Medical Treatment (3 weeks) [link](https://www.coursera.org/learn/ai-for-medical-treatment)
-
 - DeepLearning.AI - **Generative Adversarial Networks (GANs) Specialization** - [link](https://www.coursera.org/specializations/generative-adversarial-networks-gans)
     1. Build Basic Generative Adversarial Networks (GANs) (4 weeks) [link](https://www.coursera.org/learn/build-basic-generative-adversarial-networks-gans)
     2. Build Better Generative Adversarial Networks (GANs) (3 weeks) [link](https://www.coursera.org/learn/build-better-generative-adversarial-networks-gans)
     3. Apply Generative Adversarial Networks (GANs) (3 weeks) [link](https://www.coursera.org/learn/apply-generative-adversarial-networks-gans)
-
 - IBM - **IBM Introduction to Machine Learning Specialization** - [link](https://www.coursera.org/specializations/ibm-intro-machine-learning)
     1. Exploratory Data Analysis for Machine Learning (5 weeks) [link](https://www.coursera.org/learn/ibm-exploratory-data-analysis-for-machine-learning)
     2. ~~Supervised Machine Learning: Regression~~ (3 weeks) [link](https://www.coursera.org/learn/supervised-machine-learning-regression)
