@@ -151,7 +151,7 @@ Advanced
 - Classify Images of Clouds in the Cloud with AutoML Vision [link](https://www.coursera.org/projects/googlecloud-classify-images-of-clouds-in-the-cloud-with-automl-vision-boydv)
 
 **Books**
-- **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow**, 3rd Edition [link](https://www.amazon.com/dp/1098125975)
+- **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow**, 3rd Edition [link](https://www.amazon.com/dp/1098125975) : Concepts, Tools, and Techniques to Build Intelligent Systems
 - **Python for Data Analysis**, 3rd Edition [link](https://www.amazon.com/dp/109810403X) : Data Wrangling with pandas, NumPy, and Jupyter
 - **Deep Learning with Python**, 2nd Edition [link](https://www.amazon.com/dp/1617296864)
 - **Becoming a Data Head**, [link](https://www.amazon.com/dp/1119741742) : How to Think, Speak and Understand Data Science, Statistics and Machine Learning
