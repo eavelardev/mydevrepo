@@ -1,0 +1,6 @@
+- **Google Cloud Skills Boost** - 29 month, 299 year (24.9 month) (30 day trial) - [link](https://www.cloudskillsboost.google/subscriptions)
+- **Zero to Mastery** - 39 month, 279 year (23 month), lifetime 999 - [link](https://zerotomastery.io/academy/)
+- **A Cloud Guru** - 35, 47 month, 348 year (29 month) - [link](https://acloudguru.com/pricing)
+- **Coursera** - 59 month, 399 year (33.25 month) (7 day trial) - [link](https://www.coursera.org/courseraplus)
+- **RealLife** - 119.97 Full Course 41 week of lessons, 337.97/165.6 promotion - Get Fluent with Friends
+- **365 DataScience** - 36 month, 348 year (29 month) - [link](https://365datascience.com/pricing/)
