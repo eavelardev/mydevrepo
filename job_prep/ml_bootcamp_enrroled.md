@@ -151,14 +151,20 @@ Advanced
 - Classify Images of Clouds in the Cloud with AutoML Vision [link](https://www.coursera.org/projects/googlecloud-classify-images-of-clouds-in-the-cloud-with-automl-vision-boydv)
 
 **Books**
-- **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow**, 3rd Edition
-- **Deep Learning with Python**, Second Edition
-- **Python Machine Learning:** Machine Learning and Deep Learning with Python, scikit-learn, and TensorFlow 2, 3rd Edition
-- **Learning Deep Learning:** Theory and Practice of Neural Networks, Computer Vision, Natural Language Processing, and Transformers Using TensorFlow
-- **Transformers for Natural Language Processing:** Build, train, and fine-tune deep neural network architectures for NLP with Python, PyTorch, TensorFlow, BERT, and GPT-3, 2nd Edition
-- **Natural Language Processing with TensorFlow:** The definitive NLP book to implement the most sought-after machine learning models and tasks, 2nd Edition
-- **Deep Learning with TensorFlow and Keras:** Build and deploy supervised, unsupervised, deep, and reinforcement learning models, 3rd Edition
-- **TinyML Cookbook:** Combine artificial intelligence and ultra-low-power embedded devices to make the world smarter
+- **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow**, 3rd Edition [link](https://www.amazon.com/dp/1098125975)
+- **Python for Data Analysis**, 3rd Edition [link](https://www.amazon.com/dp/109810403X) : Data Wrangling with pandas, NumPy, and Jupyter
+- **Deep Learning with Python**, Second Edition [link](https://www.amazon.com/dp/1617296864)
+- **Becoming a Data Head**, [link](https://www.amazon.com/dp/1119741742) : How to Think, Speak and Understand Data Science, Statistics and Machine Learning
+- **Machine Learning with PyTorch and Scikit-Learn**, [link](https://www.amazon.com/dp/1801819319) : Develop machine learning and deep learning models with Python
+- **Effective Pandas**, [link](https://www.amazon.com/dp/B09MYXXSFM) : Patterns for Data Manipulation
+- **Designing Machine Learning Systems**, [link](https://www.amazon.com/dp/1098107969) : An Iterative Process for Production-Ready Applications
+- **Learning Deep Learning**, [link](https://www.amazon.com/dp/0137470355) : Theory and Practice of Neural Networks, Computer Vision, Natural Language Processing, and Transformers Using TensorFlow
+- **Transformers for Natural Language Processing**, 2nd Edition Build, [link](https://www.amazon.com/dp/1803247339) : train, and fine-tune deep neural network architectures for NLP with Python, PyTorch, TensorFlow, BERT, and GPT-3
+- **TinyML Cookbook**, [link](https://www.amazon.com/dp/180181497X) : Combine artificial intelligence and ultra-low-power embedded devices to make the world smarter
+- **Natural Language Processing with TensorFlow**, 2nd Edition [link](https://www.amazon.com/dp/1838641351) : The definitive NLP book to implement the most sought-after machine learning models and tasks
+- **Fundamentals of Data Engineering**, [link](https://www.amazon.com/dp/1098108302) : Plan and Build Robust Data Systems
+- **Deep Learning with TensorFlow and Keras**, 3rd Edition [link](https://www.amazon.com/dp/1803232919) : Build and deploy supervised, unsupervised, deep, and reinforcement learning models
+- **AI at the Edge**, [link](https://www.amazon.com/dp/1098120205) : Solving Real World Problems with Embedded Machine Learning
 
 ### 3. Kaggle
 
