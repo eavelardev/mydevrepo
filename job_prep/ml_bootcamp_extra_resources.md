@@ -122,6 +122,8 @@ Coursera Project Network
 **Skills**
 
 - Applied Machine Learning (Advanced) - [link](https://www.coursera.org/programs/google-developers-ml-bootcamp-latam-vt3il/skills/applied-machine-learning)
+- Artificial Neural Networks (Advanced) - [link](https://www.coursera.org/programs/google-developers-ml-bootcamp-latam-vt3il/skills/artificial-neural-network)
+- Computer Vision (Advanced) - [link](https://www.coursera.org/programs/google-developers-ml-bootcamp-latam-vt3il/skills/computer-vision)
 - Deep Learning (Advanced) - [link](https://www.coursera.org/programs/google-developers-ml-bootcamp-latam-vt3il/skills/deep-learning)
 - Machine Learning (Advanced) - [link](https://www.coursera.org/programs/google-developers-ml-bootcamp-latam-vt3il/skills/machine-learning)
 - Machine Learning Algorithms (Advanced) - [link](https://www.coursera.org/programs/google-developers-ml-bootcamp-latam-vt3il/skills/machine-learning-algorithms)

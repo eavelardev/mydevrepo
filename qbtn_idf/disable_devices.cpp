@@ -14,10 +14,8 @@ void disable_devices()
     gpio_set_level(VDD_PER_ON, 1);
 }
 
-extern "C" int app_main()
+extern "C" void app_main()
 {
     gpio_init();
     disable_devices();
-
-    return 0;
 }

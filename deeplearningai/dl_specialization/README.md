@@ -39,4 +39,18 @@ Notebooks
         - Image_segmentation_Unet_v2 (3/28/2022)
     - W4 - Special Applications: Face recognition & Neural Style Transfer
         - Face_Recognition.ipynb (3/28/2022)
-        - Art_Generation_with_Neural_Style_Transfer (8/16/2022)
+        - Art_Generation_with_Neural_Style_Transfer (3/28/2022)
+5. Sequence Models
+    - W1 - Recurrent Neural Networks
+        - Building_a_Recurrent_Neural_Network_Step_by_Step (3/28/2022)
+        - Dinosaurus_Island_Character_level_language_model (3/28/2022)
+        - Improvise_a_Jazz_Solo_with_an_LSTM_Network_v4 (3/28/2022)
+    - W2 - Natural Language Processing & Word Embeddings
+        - Operations_on_word_vectors_v2a (3/28/2022)
+        - Emoji_v3a (7/25/2022)
+    - W3
+        - Neural_machine_translation_with_attention_v4a (4/19/2022)
+        - Trigger_word_detection_v2a (3/28/2022)
+    - W4 
+        - C5_W4_A1_Transformer_Subclass_v1 (7/25/2022)
+

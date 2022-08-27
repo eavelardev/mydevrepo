@@ -29,7 +29,7 @@ bool inertial_init(void) {
     return true;
 }
 
-extern "C" int app_main()
+extern "C" void app_main()
 {
     /* Setup the inertial sensor */
     if (inertial_init() == false) {
@@ -49,6 +49,4 @@ extern "C" int app_main()
     }
 
     printf("Finish!\n");
-
-    return 0;
 }

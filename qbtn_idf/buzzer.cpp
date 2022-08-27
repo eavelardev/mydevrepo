@@ -23,7 +23,7 @@ void buzzer(int ms)
     }
 }
 
-extern "C" int app_main()
+extern "C" void app_main()
 {
     gpio_init();
 
@@ -32,6 +32,4 @@ extern "C" int app_main()
         buzzer(1000);
         vTaskDelay(1000 / portTICK_PERIOD_MS); 
     }
-
-    return 0;
 }

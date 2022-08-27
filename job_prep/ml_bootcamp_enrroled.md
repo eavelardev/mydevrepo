@@ -16,12 +16,12 @@ Google Developers
 ### 1. Deep Learning Specialization - [link](https://www.deeplearning.ai/courses/deep-learning-specialization/)
 
 **Courses**
-- DeepLearning.AI - **Deep Learning Specialization** - [link](https://www.coursera.org/specializations/deep-learning) 
+- DeepLearning.AI - **Deep Learning Specialization** - [link](https://www.coursera.org/specializations/deep-learning) ([certificate](https://www.coursera.org/account/accomplishments/specialization/certificate/VCYYDP4SU53U))
     1. `Neural Networks and Deep Learning` (4 weeks) - [link](https://www.coursera.org/learn/neural-networks-deep-learning)
     2. `Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization` (3 weeks) - [link](https://www.coursera.org/learn/deep-neural-network)
     3. `Structuring Machine Learning Projects` (2 weeks) - [link](https://www.coursera.org/learn/machine-learning-projects)
     4. `Convolutional Neural Networks` (4 weeks) - [link](https://www.coursera.org/learn/convolutional-neural-networks)
-    5. Sequence Models (4 weeks) - [link](https://www.coursera.org/learn/nlp-sequence-models)
+    5. `Sequence Models` (4 weeks) - [link](https://www.coursera.org/learn/nlp-sequence-models)
 
 ### 2.1 TensorFlow Developer Certificate - [link](https://www.tensorflow.org/certificate)
 
@@ -34,7 +34,7 @@ Google Developers
 
 - DeepLearning.AI - **DeepLearning.AI TensorFlow Developer Professional Certificate** - [link](https://www.coursera.org/professional-certificates/tensorflow-in-practice)
     1. `Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning` (4 weeks) [link](https://www.coursera.org/learn/introduction-tensorflow)
-    2. Convolutional Neural Networks in TensorFlow (4 weeks) [link](https://www.coursera.org/learn/convolutional-neural-networks-tensorflow)
+    2. `Convolutional Neural Networks in TensorFlow` (4 weeks) [link](https://www.coursera.org/learn/convolutional-neural-networks-tensorflow)
     3. Natural Language Processing in TensorFlow (4 weeks) [link](https://www.coursera.org/learn/natural-language-processing-tensorflow)
     4. Sequences, Time Series and Prediction (4 weeks) [link](https://www.coursera.org/learn/tensorflow-sequences-time-series-and-prediction)
 - DeepLearning.AI - **TensorFlow: Advanced Techniques Specialization** - [link](https://www.coursera.org/specializations/tensorflow-advanced-techniques)

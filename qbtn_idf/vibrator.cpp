@@ -10,7 +10,7 @@ void gpio_init()
     gpio_set_direction(VIBRATOR_PIN, GPIO_MODE_OUTPUT);
 }
 
-extern "C" int app_main()
+extern "C" void app_main()
 {
     gpio_init();
 
@@ -21,6 +21,4 @@ extern "C" int app_main()
         gpio_set_level(VIBRATOR_PIN, 0);
         vTaskDelay(1000 / portTICK_PERIOD_MS); 
     }
-
-    return 0;
 }
