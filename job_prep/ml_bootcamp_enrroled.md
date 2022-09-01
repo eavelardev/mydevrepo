@@ -32,11 +32,11 @@ Google Developers
 
 **Courses**
 
-- DeepLearning.AI - **DeepLearning.AI TensorFlow Developer Professional Certificate** - [link](https://www.coursera.org/professional-certificates/tensorflow-in-practice)
+- DeepLearning.AI - **TensorFlow Developer Professional Certificate** - [link](https://www.coursera.org/professional-certificates/tensorflow-in-practice) ([certificate](https://www.coursera.org/account/accomplishments/specialization/certificate/2L7DV3FTUTJF))
     1. `Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning` (4 weeks) [link](https://www.coursera.org/learn/introduction-tensorflow)
     2. `Convolutional Neural Networks in TensorFlow` (4 weeks) [link](https://www.coursera.org/learn/convolutional-neural-networks-tensorflow)
-    3. Natural Language Processing in TensorFlow (4 weeks) [link](https://www.coursera.org/learn/natural-language-processing-tensorflow)
-    4. Sequences, Time Series and Prediction (4 weeks) [link](https://www.coursera.org/learn/tensorflow-sequences-time-series-and-prediction)
+    3. `Natural Language Processing in TensorFlow` (4 weeks) [link](https://www.coursera.org/learn/natural-language-processing-tensorflow)
+    4. `Sequences, Time Series and Prediction` (4 weeks) [link](https://www.coursera.org/learn/tensorflow-sequences-time-series-and-prediction)
 - DeepLearning.AI - **TensorFlow: Advanced Techniques Specialization** - [link](https://www.coursera.org/specializations/tensorflow-advanced-techniques)
     1. Custom Models, Layers, and Loss Functions with TensorFlow (5 weeks) [link](https://www.coursera.org/learn/custom-models-layers-loss-functions-with-tensorflow)
     2. Custom and Distributed Training with TensorFlow (4 weeks) [link](https://www.coursera.org/learn/custom-distributed-training-with-tensorflow)
