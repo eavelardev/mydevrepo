@@ -28,7 +28,8 @@ Google Developers
 **Resources**
 
 - TensorFlow Developer Certificate_ Candidate Handbook - [link](https://www.tensorflow.org/extras/cert/TF_Certificate_Candidate_Handbook.pdf)
-- Tensorflow - Learn ML_ Master your path - [link](https://www.tensorflow.org/resources/learn-ml)
+- TensorFlow Tutorials and Guides - [link](https://www.tensorflow.org/overview)
+- TensorFlow - Learn ML_ Master your path - [link](https://www.tensorflow.org/resources/learn-ml)
 
 **Courses**
 

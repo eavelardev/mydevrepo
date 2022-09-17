@@ -2,7 +2,7 @@
 #include <freertos/task.h>
 #include "driver/gpio.h"
 
-#define BUZZER_PIN  (gpio_num_t)25
+#define BUZZER_PIN  GPIO_NUM_25
 
 void gpio_init()
 {

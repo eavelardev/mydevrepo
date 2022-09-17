@@ -34,7 +34,7 @@ extern "C" void app_main()
     /* Setup the inertial sensor */
     if (inertial_init() == false) {
         printf("Inertial sensor initialization failed\r\n");
-        return 0;
+        return;
     }
 
     for (int i=0; i<10; i++)

@@ -1,6 +1,6 @@
 #include "driver/gpio.h"
 
-#define VDD_PER_ON  (gpio_num_t)4
+#define VDD_PER_ON  GPIO_NUM_4
 
 void gpio_init()
 {

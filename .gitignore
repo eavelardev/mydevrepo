@@ -16,8 +16,10 @@ Data Files/
 
 .vscode/
 dev/
+practice/
 *_repo/
 *_code/
+*_env/
 __pycache__/
 
 # STM32
