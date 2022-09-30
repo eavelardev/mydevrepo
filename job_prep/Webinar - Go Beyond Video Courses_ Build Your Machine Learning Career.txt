@@ -1,0 +1,63 @@
+MLE Job Market
+
+* You have to stand out more
+
+Hiring Trends
+
+What No to Do
+
+x Wait for a better time
+
+What to Do
+
+* Fill in essential knowledge gaps
+* know the primary commercial ML tools
+
+Job Seeking
+
+* Apply to job descriptions that interest You
+* Keep applying and following up
+* Act now!
+
+Understand Where you are, and where you're going
+
+1. Big Tech (FANNG, MANNG)
+2. Social Good + Impact
+3. "What I do is more important than where I do it"
+    a. Career switchers
+    b. Intersted in  new technology
+    c. Want to not have to sell ML/AI to management (AI-first)
+    d. Because AI is the future
+
+Values AI technology
+Look at Job descriptions
+AI mindset
+use keywords
+
+Are you able to do the job?
+show me don't tell me?
+actively work on projects
+be able to describe projects
+
+From Model-Centric to Data-Centric AI
+* Modeling is great, but it's really not in most company's needs
+
+Think like a hiring manager
+Be Intentional
+self awareness
+Initial aim
+career awareness
+grow mindset
+hugginface
+fastapi
+Iteration is key
+Write a report everything you do
+create a youtube video
+keep learning
+
+Structured Learning
+
+* Building end-to-end ML projects using key AI concepts
+* Join a community
+
+$160k Average new salary (U.S.)

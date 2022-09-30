@@ -21,11 +21,7 @@ practice/
 *_code/
 *_env/
 __pycache__/
-deeplearningAI/tf_dev_certificate/.git
-deeplearningAI/tf_dev_certificate/tensorflow-1-submodule
-deeplearningAI/tf_dev_certificate/.gitignore
-deeplearningAI/tf_dev_certificate/.gitmodules
-deeplearningAI/tf_dev_certificate/LICENSE
+data/
 
 # STM32
 .metadata/
