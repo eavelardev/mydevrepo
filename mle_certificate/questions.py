@@ -58,10 +58,22 @@ questions = [
             'C': "Select all transactions in the holdout dataset. Plot the area under the receiver operating characteristic curve (AUC ROC), and report the F1 score for all available thresholds.",
             'D': "Select all transactions in the holdout dataset. Plot the precision-recall curve with associated average precision, and report the true positive rate, false positive rate, and false negative rate for all available thresholds."
         },
-        'answers': [],
+        'answers': ['D'],
         'explanation':
-        "",
-        'references': []
+
+        "* The precision-recall curve is an appropriate metric for imbalanced classification when the output can be set using different thresholds. Presenting the precision-recall curve together with the mentioned rates provides business stakeholders with all the information necessary to evaluate model performance.\n"
+
+        "* You need business directions about the cost of misclassification to define the optimal threshold for both balanced and imbalanced classification\n"
+
+        "* The holdout dataset needs to represent real-world transactions to have a meaningful model evaluation, and you should never change its distribution.\n"
+
+        "* Classes in the holdout dataset are not balanced, so the ROC curve is not appropriate; also, neither F1 score nor ROC curve is recommended for communicating to business stakeholders. The F1 score aggregates precision and recall, but it is important to look at each metric separately to evaluate the model’s performance when the cost of misclassification is highly unbalanced between labels.",
+
+        'references': [
+            'https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc',
+            'https://colab.research.google.com/github/Fraud-Detection-Handbook/fraud-detection-handbook/blob/main/Chapter_4_PerformanceMetrics/ThresholdBased.ipynb',
+            'https://colab.research.google.com/github/Fraud-Detection-Handbook/fraud-detection-handbook/blob/main/Chapter_4_PerformanceMetrics/ThresholdFree.ipynb'
+        ]
     },
     {
         'question':
@@ -69,14 +81,26 @@ questions = [
         'tags': [2, 'sample'],
         'options': {
             'A': "Create a scheduled pipeline on Vertex AI Pipelines that accesses the data from Cloud Storage, uses Vertex AI to perform training and batch prediction, and outputs a file in a Cloud Storage bucket that contains a list of all customer emails and expected spending.",
-            'B': " Create a scheduled pipeline on Cloud Composer that accesses the data from Cloud Storage, copies the data to BigQuery, uses BigQuery ML to perform training and batch prediction, and outputs a table in BigQuery with customer emails and expected spending.",
+            'B': "Create a scheduled pipeline on Cloud Composer that accesses the data from Cloud Storage, copies the data to BigQuery, uses BigQuery ML to perform training and batch prediction, and outputs a table in BigQuery with customer emails and expected spending.",
             'C': "Create a scheduled notebook on Vertex AI Workbench that accesses the data from Cloud Storage, performs training and batch prediction on the managed notebook instance, and outputs a file in a Cloud Storage bucket that contains a list of all customer emails and expected spending.",
             'D': "Create a scheduled pipeline on Cloud Composer that accesses the data from Cloud Storage, uses Vertex AI to perform training and batch prediction, and sends an email to the marketing team’s Gmail group email with an attachment that contains an encrypted list of all customer emails and expected spending."
         },
-        'answers': [],
+        'answers': ['A'],
         'explanation':
-        "",
-        'references': []
+        "* Vertex AI Pipelines and Cloud Storage are cost-effective and secure solutions. The solution requires the least number of code interactions because the marketing team can update the pipeline and schedule parameters from the Google Cloud console.\n"
+        
+        "* Cloud Composer is not a cost-efficient solution for one pipeline because its environment is always active. In addition, using BigQuery is not the most cost-effective solution.\n"
+        
+        "* The marketing team would have to enter the Vertex AI Workbench instance to update a pipeline parameter, which does not minimize code interactions.\n"
+        
+        "* Cloud Composer is not a cost-efficient solution for one pipeline because its environment is always active. Also, using email to send personally identifiable information (PII) is not a recommended approach.",
+        
+        'references': [
+            'https://cloud.google.com/storage/docs/encryption',
+            'https://cloud.google.com/vertex-ai/docs/pipelines/run-pipeline',
+            'https://cloud.google.com/vertex-ai/docs/workbench/managed/schedule-managed-notebooks-run-quickstart',
+            'https://cloud.google.com/architecture/setting-up-mlops-with-composer-and-mlflow'
+        ]
     },
     {
         'question':
@@ -88,10 +112,22 @@ questions = [
             'C': " Create a TPU virtual machine, and gradually scale up the machine type until the optimal execution time is reached. Add TPU initialization at the start of the program, define a distributed TPUStrategy, and create the model in the strategy’s scope with batch size and training steps dependent on the number of TPUs.",
             'D': "Create a TPU node, and gradually scale up the machine type until the optimal execution time is reached. Add TPU initialization at the start of the program, define a distributed TPUStrategy, and create the model in the strategy’s scope with batch size and training steps dependent on the number of TPUs."
         },
-        'answers': [],
+        'answers': ['B'],
         'explanation':
-        "",
-        'references': []
+
+        "* GPUs are the correct hardware for deep learning training with high-precision training, and distributing training with multiple instances will allow maximum flexibility in fine-tuning the accelerator selection to minimize execution time. Note that one worker could still be the best setting if the overhead of synchronizing the gradients across machines is too high, in which case this approach will be equivalent to MirroredStrategy.\n"
+        
+        "* It is suboptimal in minimizing execution time for model training. MirroredStrategy only supports multiple GPUs on one instance, which may not be as performant as running on multiple instances.\n"
+        
+        "* TPUs are not recommended for workloads that require high-precision arithmetic, and are recommended for models that train for weeks or months.\n"
+        
+        "* TPUs are not recommended for workloads that require high-precision arithmetic, and are recommended for models that train for weeks or months. Also, TPU nodes are not recommended unless required by the application.",
+
+        'references': [
+            'https://cloud.google.com/tpu/docs/intro-to-tpu#when_to_use_tpus',
+            'https://www.tensorflow.org/guide/distributed_training',
+            'https://www.tensorflow.org/tutorials/distribute/multi_worker_with_ctl'
+        ]
     },
     {
         'question':
@@ -103,10 +139,23 @@ questions = [
             'C': "Use key-based hashes to tokenize the features containing PII data, and train the model from scratch.",
             'D': "Use deterministic encryption to tokenize the features containing PII data, and tune the model from the last checkpoint."
         },
-        'answers': [],
+        'answers': ['C'],
         'explanation':
-        "",
-        'references': []
+
+        "* Hashing is an irreversible transformation that ensures anonymization and does not lead to an expected drop in model performance because you keep the same feature set while enforcing referential integrity.\n"
+        
+        "* Removing features from the model does not keep referential integrity by maintaining the original relationship between records, and is likely to cause a drop in performance.\n"
+        
+        "* Masking does not enforce referential integrity, and a drop in model performance may happen. Also, tuning the existing model is not recommended because the model training on the original dataset may have memorized sensitive information.\n"
+        
+        "* Deterministic encryption is reversible, and anonymization requires irreversibility. Also, tuning the existing model is not recommended because the model training on the original dataset may have memorized sensitive information.",
+
+        'references': [
+            'https://cloud.google.com/dlp/docs/transformations-reference#transformation_methods',
+            'https://cloud.google.com/dlp/docs/deidentify-sensitive-data',
+            'https://cloud.google.com/blog/products/identity-security/next-onair20-security-week-session-guide',
+            'https://cloud.google.com/dlp/docs/creating-job-triggers'
+        ]
     },
     {
         'question':
@@ -118,10 +167,22 @@ questions = [
             'C': "1. Use TFDV to generate statistics, and use Pandas to infer the schema for the training dataset that has been loaded from Cloud Storage. 2. Use TFRecordWriter to convert the training dataset into a TFRecord. 3. Visualize both statistics and schema, and manually fix anomalies in the dataset’s schema and values.",
             'D': "1. Use TFDV to generate statistics and infer the schema for the training and evaluation datasets that have been loaded with Pandas. 2. Use TFRecordWriter to convert the training and evaluation datasets into TFRecords. 3. Visualize statistics for both datasets simultaneously to fix the datasets’ values, and fix the training dataset’s schema after displaying it together with anomalies in the evaluation dataset."
         },
-        'answers': [],
+        'answers': ['B'],
         'explanation':
-        "",
-        'references': []
+        
+        "* It takes the minimum number of steps to correctly fix problems in the data with TFDV before model tuning. This process involves installing tensorflow_data_validation, loading the training and evaluation datasets directly from Cloud Storage, and fixing schema and values for both. Note that the schema is only stored for the training set because it is expected to match at evaluation.\n"
+        
+        "* You also need to use the evaluation dataset for analysis. If the features do not belong to approximately the same range as the training dataset, the accuracy of the model will be affected.\n"
+        
+        "* Transforming into TFRecord is an unnecessary step. Also, you need to use the evaluation dataset for analysis. If the features do not belong to approximately the same range as the training dataset, the accuracy of the model will be affected.\n"
+        
+        "* Transforming into TFRecord is an unnecessary step.",
+
+        'references': [
+            'https://www.tensorflow.org/tfx/guide/tfdv',
+            'https://cloud.google.com/tensorflow-enterprise/docs/overview',
+            'https://cloud.google.com/architecture/ml-modeling-monitoring-analyzing-training-server-skew-in-ai-platform-prediction-with-tfdv'
+        ]
     },
     {
         'question':
@@ -133,10 +194,22 @@ questions = [
             'C': "Switch from L1 to L2 regularization, and iteratively adjust the L2 penalty until the loss improves.",
             'D': "Adjust the learning rate to exponentially decay with a larger decrease at the step where the loss jumped, and iteratively adjust the initial learning rate until the loss improves."
         },
-        'answers': [],
+        'answers': ['B'],
         'explanation':
-        "",
-        'references': []
+        
+        "* A large increase in loss is typically caused by anomalous values in the input data that cause NaN traps or exploding gradients.\n"
+        
+        "* Divergence due to repetitive behavior in the data typically shows a loss that starts oscillating after some steps but does not jump back to the top.\n"
+        
+        "* L2 is not clearly a better solution than L1 regularization for wide models. L1 helps with sparsity, and L2 helps with collinearity.\n"
+        
+        "* A learning rate schedule that is not tuned typically shows a loss that starts oscillating after some steps but does not jump back to the top.",
+
+        'references': [
+            'https://developers.google.com/machine-learning/crash-course/representation/cleaning-data',
+            'https://developers.google.com/machine-learning/testing-debugging/metrics/interpretic',
+            'https://developers.google.com/machine-learning/crash-course/regularization-for-sparsity/l1-regularization'
+        ]
     },
     {
         'question':
@@ -148,10 +221,21 @@ questions = [
             'C': "Perform correlation analysis. Remove features that are highly correlated to one another and features that are not correlated to the target.",
             'D': "Ensure that categorical features are one-hot encoded and that continuous variables are binned, and create feature crosses for a subset of relevant features."
         },
-        'answers': [],
+        'answers': ['C'],
         'explanation':
-        "",
-        'references': []
+        
+        "* Removing irrelevant features reduces model complexity and is expected to boost performance by removing noise.\n"
+        
+        "* Keep the original feature set ..., although the approach lets you reduce RAM requirements by pushing the weights for meaningless features to 0, regularization tends to cause the training error to increase. Consequently, the model performance is expected to decrease.\n"
+        
+        "* PCA is an unsupervised approach, and it is a valid method of feature selection only if the most important variables are the ones that also have the most variation. This is usually not true, and disregarding the last few components is likely to decrease model performance.\n"
+        
+        "* Ensure that categorical features ..., can make the model converge faster but it increases model RAM requirements, and it is not expected to boost model performance because neural networks inherently learn feature crosses.",
+        'references': [
+            'https://developers.google.com/machine-learning/crash-course/feature-crosses/video-lecture',
+            'https://cloud.google.com/blog/products/ai-machine-learning/building-ml-models-with-eda-feature-selection',
+            'https://developers.google.com/machine-learning/crash-course/regularization-for-sparsity/l1-regularization'
+        ]
     },
     {
         'question':
@@ -163,10 +247,21 @@ questions = [
             'C': "Refactor the notebook into a parametrized and dockerized Python script, and push it to Container Registry. Use the UI to set up a hyperparameter tuning job in Vertex AI. Use the created image and include Grid Search as an algorithm.",
             'D': "Refactor the notebook into a parametrized and dockerized Python script, and push it to Container Registry. Use the command line to set up a hyperparameter tuning job in Vertex AI. Use the created image and include Random Search as an algorithm where maximum trial count is equal to parallel trial count."
         },
-        'answers': [],
+        'answers': ['D'],
         'explanation':
-        "",
-        'references': []
+        "* Random Search can limit the search iterations on time and parallelize all trials so that the execution time of the tuning job corresponds to the longest training produced by your hyperparameter combination. This approach also optimizes for the other mentioned metrics.\n"
+        
+        "* Vertex AI Vizier should be used for systems that do not have a known objective function or are too costly to evaluate using the objective function. Neither applies to the specified use case. Vizier requires sequential trials and does not optimize for cost or tuning time.\n"
+        
+        "* Bayesian optimization can converge in fewer iterations than the other algorithms but not necessarily in a faster time because trials are dependent and thus require sequentiality. Also, running tuning locally does not optimize for reproducibility and scalability.\n"
+        
+        "* Grid Search is a brute-force approach and it is not feasible to fully parallelize. Because you need to try all hyperparameter combinations, that is an exponential number of trials with respect to the number of hyperparameters, Grid Search is inefficient for high spaces in time, cost, and computing power.",
+
+        'references': [
+            'https://cloud.google.com/vertex-ai/docs/training/hyperparameter-tuning-overview',
+            'https://cloud.google.com/vertex-ai/docs/vizier/overview',
+            'https://google-cloud-pipeline-components.readthedocs.io/en/google-cloud-pipeline-components-1.0.7/google_cloud_pipeline_components.v1.hyperparameter_tuning_job.html#google_cloud_pipeline_components.v1.hyperparameter_tuning_job.HyperparameterTuningJobRunOp'
+        ]
     },
     {
         'question':
@@ -178,10 +273,22 @@ questions = [
             'C': "Determine the maximum acceptable mean absolute percentage error (MAPE) as the baseline, and compare the model’s MAPE against the baseline.",
             'D': "Use a simple neural network with one fully connected hidden layer as the baseline, and compare the trained model’s mean squared error against the baseline."
         },
-        'answers': [],
+        'answers': ['D'],
         'explanation':
-        "",
-        'references': []
+        
+        "* A one-layer neural network can handle collinearity and is a good baseline. The mean square error is a good metric because it gives more weight to errors with larger absolute values than to errors with smaller absolute values.\n"
+        
+        "* Always predicting the mean value is not expected to be a strong baseline; house prices could assume a wide range of values. Also, mean absolute error is not the best metric to detect variance because it gives the same weight to all errors.\n"
+        
+        "* A linear model is not expected to perform well with multicollinearity. Also, root mean squared error does not penalize high variance as much as mean squared error because the root operation reduces the importance of higher values.\n"
+        
+        "* While defining a threshold for acceptable performance is a good practice for blessing models, a baseline should aim to test statistically a model’s ability to learn by comparing it to a less complex data-driven approach. Also, this approach does not detect high variance in the model.",
+
+        'references': [
+            'https://developers.google.com/machine-learning/testing-debugging/common/model-errors#establish-a-baseline',
+            'https://cloud.google.com/automl-tables/docs/evaluate#evaluation_metrics_for_regression_models',
+            'https://developers.google.com/machine-learning/glossary#baseline'
+        ]
     },
     {
         'question':
@@ -197,10 +304,24 @@ questions = [
             'C': "Switch to tf.distribute.MultiWorkerMirroredStrategy with Reduction Server. Increase the number of workers until the memory error is resolved.",
             'D': "Switch to a custom distribution strategy that uses TF_CONFIG to equally split model layers between workers. Increase the number of workers until the memory error is resolved."
         },
-        'answers': [],
+        'answers': ['D'],
         'explanation':
-        "",
-        'references': []
+        
+        "* This is an example of a model-parallel approach that splits the model between workers. You can use TensorFlow Mesh to implement this. This approach is expected to fix the error because the memory issues in the primary replica are caused by the size of the model itself.\n"
+        
+        "* MirroredStrategy is a data-parallel approach. This approach is not expected to fix the error because the memory issues in the primary replica are caused by the size of the model itself.\n"
+        
+        "* The parameter server alleviates some workload from the primary replica by coordinating the shared model state between the workers, but it still requires the whole model to be shared with workers. This approach is not expected to fix the error because the memory issues in the primary replica are caused by the size of the model itself.\n"
+        
+        "* MultiWorkerMirroredStrategy is a data-parallel approach. This approach is not expected to fix the error because the memory issues in the primary replica are caused by the size of the model itself. Reduction Server increases throughput and reduces latency of communication, but it does not help with memory issues.",
+
+        'references': [
+            'https://cloud.google.com/ai-platform/training/docs/training-at-scale',
+            'https://cloud.google.com/ai-platform/training/docs/machine-types#scale_tiers',
+            'https://cloud.google.com/vertex-ai/docs/training/distributed-training',
+            'https://cloud.google.com/ai-platform/training/docs/overview#distributed_training_structure',
+            'https://github.com/tensorflow/mesh'
+        ]
     },
     {
         'question':
@@ -212,11 +333,22 @@ questions = [
             'C': "1. Configure a Cloud Function that exports features from BigQuery to Vertex AI Feature Store. 2. Use the online service API from Vertex AI Feature Store to perform feature lookup. Deploy the model as a custom prediction endpoint in Vertex AI, and enable automatic scaling.",
             'D': "1. Configure a Cloud Function that exports features from BigQuery to Vertex AI Feature Store. 2. Use a custom container on Google Kubernetes Engine to deploy a service that performs feature lookup from Vertex AI Feature Store’s online serving API and performs inference with an in-memory model."
         },
-        'answers': [],
+        'answers': ['A'],
         'explanation':
-        "Maybe:\n"
-        "Configure a Cloud Function that exports features from BigQuery to Vertex AI Feature Store. 2. Use the online service API from Vertex AI Feature Store to perform feature lookup. Deploy the model as a custom prediction endpoint in Vertex AI, and enable automatic scaling",
-        'references': []
+
+        "* This approach creates a fully managed autoscalable service that minimizes maintenance while providing low latency with the use of Memorystore.\n"
+        
+        "* Feature lookup and model inference can be performed in Cloud Function, and using Google Kubernetes Engine increases maintenance.\n"
+        
+        "* Vertex AI Feature Store is not as low-latency as Memorystore.\n"
+        
+        "* Feature lookup and model inference can be performed in Cloud Function, and using Google Kubernetes Engine increases maintenance. Also, Vertex AI Feature Store is not as low-latency as Memorystore",
+
+        'references': [
+            'https://cloud.google.com/architecture/ml-on-gcp-best-practices#model-deployment-and-serving',
+            'https://cloud.google.com/vertex-ai/docs/featurestore/overview#benefits',
+            'https://cloud.google.com/memorystore/docs/redis/redis-overview'
+        ]
     },
     {
         'question':
@@ -228,10 +360,22 @@ questions = [
             'C': "Determine the trained model’s location from the pipeline’s metadata in Vertex ML Metadata, and compare the trained model’s size to the previous model.",
             'D': "Request access to production systems. Get the training data’s location from the pipeline’s metadata in Vertex ML Metadata, and compare data volumes of the current run to the previous run."
         },
-        'answers': [],
+        'answers': ['A'],
         'explanation':
-        "",
-        'references': []
+        
+        "* TensorBoard provides a compact and complete overview of training metrics such as loss and accuracy over time. If the training converges with the model’s expected accuracy, the model can be deployed.\n"
+        
+        "* Checking input configuration is a good test, but it is not sufficient to ensure that model performance is acceptable. You can access logs and outputs for each pipeline step to review model performance, but it would involve more steps than using TensorBoard.\n"
+        
+        "* Model size is a good indicator of health but does not provide a complete overview to make sure that the model can be safely deployed. Note that the pipeline’s metadata can also be accessed directly from Vertex AI Pipelines.\n"
+        
+        "* Data is the most probable cause of this behavior, but it is not the only possible cause. Also, access requests could take a long time and are not the most secure option. Note that the pipeline’s metadata can also be accessed directly from Vertex AI Pipelines.",
+
+        'references': [
+            'https://cloud.google.com/vertex-ai/docs/experiments/tensorboard-overview',
+            'https://cloud.google.com/vertex-ai/docs/ml-metadata/introduction',
+            'https://cloud.google.com/vertex-ai/docs/pipelines/visualize-pipeline'
+        ]
     },
     {
         'question':
@@ -243,10 +387,21 @@ questions = [
             'C': "Create a Model Monitoring job for the Vertex AI endpoint that uses the training data in BigQuery to perform training-serving skew detection and uses Cloud Logging to send alerts. Set up a Cloud Function to initiate model retraining that is triggered when an alert is logged.",
             'D': "Update the model hosted in Vertex AI to enable request-response logging. Schedule a daily DataFlow Flex job that uses Tensorflow Data Validation to detect training-serving skew and uses Cloud Logging to send alerts. Set up a Cloud Function to initiate model retraining that is triggered when an alert is logged."
         },
-        'answers': [],
+        'answers': ['A'],
         'explanation':
-        "",
-        'references': []
+        
+        "* Vertex AI Model Monitoring is a fully managed solution for monitoring training-serving skew that, by definition, requires minimal maintenance. Using the console for diagnostics is recommended for a comprehensive monitoring solution because there could be multiple causes for the skew that require manual review.\n"
+        
+        "* This solution does not minimize maintenance. It involves multiple custom components that require additional updates for any schema change.\n"
+        
+        "* A model retrain does not necessarily fix skew. For example, differences in pre-processing logic between training and prediction can also cause skew.\n"
+        
+        "* Update the model hosted in Vertex AI to enable request-response logging. Schedule a daily DataFlow ..., does not minimize maintenance. It involves multiple components that require additional updates for any schema change. Also, a model retrain does not necessarily fix skew. For example, differences in pre-processing logic between training and prediction can also cause skew.",
+
+        'references': [
+            'https://cloud.google.com/architecture/ml-modeling-monitoring-automating-server-data-skew-detection-in-ai-platform-prediction',
+            'https://cloud.google.com/vertex-ai/docs/model-monitoring/overview'
+        ]
     },
     {
         'question':
@@ -258,11 +413,23 @@ questions = [
             'C': "Define a regression task where the label is the sale price represented as an integer. Use mean absolute error as the metric.",
             'D': "Define a regression task where the label is the average of the price range that corresponds to the house sale price represented as an integer. Use root mean squared error as the metric."
         },
-        'answers': [],
+        'answers': ['B'],
         'explanation':
-        "Maybe:\n"
-        "Define a multi-class classification task where each price range is a categorical label. Use accuracy as the metric",
-        'references': []
+
+        "* The use case is an ordinal classification task which is most simply solved using multi-class classification. Accuracy as a metric is the best match for a use case with discrete and balanced labels.\n"
+        
+        "* Define a one-vs-one classification task ..., is more complex than the classification approach suggested in the correct option. F1 score is not useful with equally distributed labels, and one-vs-one classification is used for multi-label classification, but the use case would require only one label to be correct.\n"
+        
+        "* Regression is not the recommended approach when solving an ordinal classification task with a small number of discrete values. This specific regression approach adds complexity because it uses the exact sale price to predict a range. Finally, the mean absolute error would not be the recommended metric because it gives the same penalty for errors of any magnitude.\n"
+        
+        "* Regression is not the recommended approach when solving an ordinal classification task with a small number of discrete values. This specific regression approach would be recommended because it uses a less complex label and a recommended metric to minimize variance and bias.",
+
+        'references': [
+            'https://cloud.google.com/automl-tables/docs/problem-types',
+            'https://cloud.google.com/blog/products/gcp/predicting-community-engagement-on-reddit-using-tensorflow-gdelt-and-cloud-dataflow-part-2',
+            'https://www.tensorflow.org/tutorials/keras/regression',
+            'https://www.tensorflow.org/tutorials/keras/classification'
+        ]
     },
     {
         'question':
@@ -274,10 +441,22 @@ questions = [
             'C': "Use pruning to tune the pre-trained model on your dataset, and serve the pruned model after stripping it of training variables.",
             'D': "Use clustering to tune the pre-trained model on your dataset, and serve the clustered model after stripping it of training variables."
         },
-        'answers': [],
+        'answers': ['A'],
         'explanation':
-        "",
-        'references': []
+
+        "* Post-training quantization is the recommended option for reducing model latency when re-training is not possible. Post-training quantization can minimally decrease model performance.\n"
+        
+        "* Tuning the whole model on the custom dataset only will cause a drop in offline performance.\n"
+        
+        "* Tuning the whole model on the custom dataset only will cause a drop in offline performance. Also, pruning helps in compressing model size, but it is expected to provide less latency improvements than quantization.\n"
+        
+        "* Tuning the whole model on the custom dataset only will cause a drop in offline performance. Also, clustering helps in compressing model size, but it does not reduce latency.",
+
+        'references': [
+            'https://cloud.google.com/architecture/best-practices-for-ml-performance-cost',
+            'https://www.tensorflow.org/lite/performance/model_optimization',
+            'https://www.tensorflow.org/tutorials/images/transfer_learning'
+        ]
     },
     {
         'question':
@@ -289,10 +468,23 @@ questions = [
             'C': "Upsample the minority class in the training set, and update the weight of the upsampled class by the same sampling factor.",
             'D': "Downsample the majority class in the training set, and update the weight of the downsampled class by the same sampling factor."
         },
-        'answers': [],
+        'answers': ['D'],
         'explanation':
-        "",
-        'references': []
+
+        "* Downsampling with upweighting improves performance on the minority class while speeding up convergence and keeping the predictions calibrated.\n"
+        
+        "* This approach does not guarantee calibrated predictions and does not improve training run time.\n"
+        
+        "* This approach increases run time by adding threshold tuning and calibration on top of model training.\n"
+        
+        "* Upsampling increases training run time by providing more data samples during training.",
+
+        'references': [
+            'https://developers.google.com/machine-learning/data-prep/construct/sampling-splitting/imbalanced-data',
+            'https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/structured_data/imbalanced_data.ipynb',
+            'https://colab.research.google.com/github/stellargraph/stellargraph/blob/master/demos/calibration/calibration-node-classification.ipynb',
+            'https://developers.google.com/machine-learning/glossary#calibration-layer'
+        ]
     },
     {
         'question':
@@ -304,10 +496,26 @@ questions = [
             'C': "Introduce L1 regularization to fix the validation loss, and increase the learning rate and the number of training epochs to improve the convergence of both losses.",
             'D': "Introduce L2 regularization to fix the validation loss, and increase the number and dimension of the layers in the network to improve the convergence of both losses."
         },
-        'answers': [],
+        'answers': ['D'],
         'explanation':
-        "",
-        'references': []
+
+        "* L2 regularization prevents overfitting. Increasing the model’s complexity boosts the predictive ability of the model, which is expected to optimize loss convergence when underfitting.\n"
+        
+        "* Changing the learning rate does not reduce overfitting. Increasing the number of training epochs is not expected to improve the losses significantly.\n"
+        
+        "* Changing the learning rate does not reduce overfitting.\n"
+        
+        "* Increasing the number of training epochs is not expected to improve the losses significantly, and increasing the learning rate could also make the model training unstable. L1 regularization could be used to stabilize the learning, but it is not expected to be particularly helpful because only the most relevant features have been used for training.",
+
+        'references': [
+            'https://developers.google.com/machine-learning/testing-debugging/common/overview',
+            'https://developers.google.com/machine-learning/crash-course/regularization-for-simplicity/l2-regularization',
+            'https://developers.google.com/machine-learning/crash-course/regularization-for-sparsity/l1-regularization',
+            'https://cloud.google.com/bigquery-ml/docs/preventing-overfitting',
+            'https://www.tensorflow.org/tutorials/keras/overfit_and_underfit',
+            'https://www.tensorflow.org/tensorboard/get_started',
+            'https://cloud.google.com/architecture/guidelines-for-developing-high-quality-ml-solutions#guidelines_for_model_quality'
+        ]
     },
     {
         'question':
@@ -319,10 +527,22 @@ questions = [
             'C': "Deploy the current model version with an Istio resource in Google Kubernetes Engine, and route production traffic to it. Deploy the new model version, and use Istio to route a small random subset of traffic to it. If the new version is successful, gradually route the remaining traffic to it.",
             'D': "Install Seldon Core and deploy an Istio resource in Google Kubernetes Engine. Deploy the current model version and the new model version using the multi-armed bandit algorithm in Seldon to dynamically route requests between the two versions before eventually routing all traffic over to the best-performing version."
         },
-        'answers': [],
+        'answers': ['B'],
         'explanation':
-        "",
-        'references': []
+
+        "* Shadow deployments minimize the risk of affecting user experience while ensuring zero downtime.\n"
+        
+        "* Canary deployments may affect user experience, even if on a small subset of users.\n"
+        
+        "* The multi-armed bandit approach may affect user experience, even if on a small subset of users. This approach could cause downtime when moving between services.",
+
+        'references': [
+            'https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning#data_and_model_validation',
+            'https://cloud.google.com/architecture/implementing-deployment-and-testing-strategies-on-gke',
+            'https://cloud.google.com/architecture/application-deployment-and-testing-strategies#choosing_the_right_strategy',
+            'https://cloud.google.com/vertex-ai/docs/general/deployment',
+            'https://docs.seldon.io/projects/seldon-core/en/latest/analytics/routers.html'
+        ]
     },
     {
         'question':
@@ -336,12 +556,25 @@ questions = [
             'A': "Combine all preprocessing steps in a function, and call the function on the string input before requesting the model’s prediction on the processed input.",
             'B': "Combine all preprocessing steps in a function, and update the default serving signature to accept a string input wrapped into the preprocessing function call.",
             'C': "Create a custom layer that performs all preprocessing steps, and update the Keras model to accept a string input followed by the custom preprocessing layer.",
-            'D': " Combine all preprocessing steps in a function, and update the Keras model to accept a string input followed by a Lambda layer wrapping the preprocessing function."
+            'D': "Combine all preprocessing steps in a function, and update the Keras model to accept a string input followed by a Lambda layer wrapping the preprocessing function."
         },
-        'answers': [],
+        'answers': ['B'],
         'explanation':
-        "",
-        'references': []
+
+        "* Combine all preprocessing steps in a function, and update the default ..., efficiently updates the model while ensuring no training-serving skew.\n"
+        
+        "* Duplicating the preprocessing adds unnecessary dependencies between the training and serving code and could cause training-serving skew.\n"
+        
+        "* Create a custom layer ..., adds unnecessary complexity. Because you update the model directly, you will need to re-train the model.\n"
+        
+        "* Combine all preprocessing steps in a function, and update the Keras model ..., adds unnecessary complexity. Because you update the model directly, you will need to re-train the model. Note that using Lambda layers over custom layers is recommended for simple operations or quick experimentation only.",
+
+        'references': [
+            'https://cloud.google.com/blog/topics/developers-practitioners/add-preprocessing-functions-tensorflow-models-and-deploy-vertex-ai',
+            'https://www.tensorflow.org/tutorials/customization/custom_layers',
+            'https://www.tensorflow.org/api_docs/python/tf/keras/layers/Lambda',
+            'https://developers.google.com/machine-learning/guides/rules-of-ml#rule_32_re-use_code_between_your_training_pipeline_and_your_serving_pipeline_whenever_possible'
+        ]
     },
     {
         'question':
@@ -365,10 +598,24 @@ questions = [
                 "2. Load the TFX pipeline in Vertex AI Pipelines, and configure the pipeline to use the same instance type configuration as the notebook.\n"
                 "3. Use Cloud Scheduler to configure a recurring execution for the pipeline. 4. Access data and model metadata in Vertex AI Pipelines."
         },
-        'answers': [],
+        'answers': ['C'],
         'explanation':
-        "",
-        'references': []
+
+        "* Create a Cloud Storage bucket ..., minimizes running costs by being self-managed. This approach is recommended to minimize running costs only for simple use cases such as deploying one pipeline only. When optimizing for maintenance and development costs or scaling to more than one pipeline or performing experimentation, using Vertex ML Metadata and Vertex AI Pipelines are recommended.\n"
+        
+        "* A managed solution does not minimize running costs, and Vertex AI ML Metadata is more managed than Cloud Storage.\n"
+        
+        "* A managed solution does not minimize running costs, and this approach introduces Vertex training service with Vertex ML Metadata, which are both managed services.\n"
+        
+        "* A managed solution does not minimize running costs, and this approach introduces Vertex AI Pipelines, which is a fully managed service.",
+
+        'references': [
+            'https://cloud.google.com/vertex-ai/docs/pipelines/lineage',
+            'https://cloud.google.com/vertex-ai/docs/ml-metadata/tracking',
+            'https://cloud.google.com/vertex-ai/pricing',
+            'https://cloud.google.com/architecture/ml-on-gcp-best-practices#operationalized-training',
+            'https://cloud.google.com/architecture/ml-on-gcp-best-practices#organize-your-ml-model-artifacts'
+        ]
     },
     # Cloud OnAir: Machine Learning Certification (4 questions)
     {
@@ -623,7 +870,10 @@ questions = [
         },
         'answers': ['C'],
         'explanation':
-        "The correct answer is bucketing. In this case, values from 0 to 33 could be low, 34 to 66 could be medium, and values greater than 66 could be high. Regularization is the limiting of information captured by a model to prevent overfishing; L1 and L2 are two examples of regularization techniques.Normalization is a transformation that scales numeric values to the range 0 1o 1.",
+        "The correct answer is bucketing. In this case, values from 0 to 33 could be low, 34 to 66 could be medium, and values greater than 66 could be high\n." 
+        "Regularization is the limiting of information captured by a model to prevent overfishing\n" 
+        "L1 and L2 are two examples of regularization techniques\n."
+        "Normalization is a transformation that scales numeric values to the range 0 to 1.",
         'references': []
     },
     {
@@ -1664,7 +1914,7 @@ questions = [
         'explanation':
         "Vertex AI allows you to register a BQML model in it",
         'references': [
-            'https://cloud.google.com/bigquery-ml/docs/managingmodels-vertex']
+            'https://cloud.google.com/bigquery-ml/docs/managing-models-vertex']
     },
     {
         'question':
@@ -5299,5 +5549,41 @@ questions = [
         'references': [
             'https://cloud.google.com/python/docs/reference/aiplatform/latest/google.cloud.aiplatform.CustomTrainingJob#google_cloud_aiplatform_CustomTrainingJob_run'
         ]
-    }
+    },
+    {
+        'question':
+        "Command to enable Vertex AI API in your project",
+        'tags': ['gcp'],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "gcloud --project PROJECT_ID services enable aiplatform.googleapis.com",
+        'references': [
+            'https://cloud.google.com/bigquery-ml/docs/managing-models-vertex'
+        ]
+    },
+    {
+        'question':
+        "Command to grant Vertex AI Model Registry permission to your service account",
+        'tags': ['gcp'],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "gcloud projects add-iam-policy-binding PROJECT_ID --member=serviceAccount:YOUR_SERVICE_ACCOUNT --role=roles/aiplatform.admin --condition=None",
+        'references': [
+            'https://cloud.google.com/bigquery-ml/docs/managing-models-vertex'
+        ]
+    },
+    {
+        'question':
+        "Command to grant Vertex AI Model Registry permission to your service account, if you are not owner of your projec",
+        'tags': ['gcp'],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "gcloud projects add-iam-policy-binding PROJECT_ID --member=user:YOUR_GCLOUD_ACCOUNT --role=roles/aiplatform.admin --condition=None",
+        'references': [
+            'https://cloud.google.com/bigquery-ml/docs/managing-models-vertex'
+        ]
+    },
 ]
