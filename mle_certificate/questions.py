@@ -473,9 +473,9 @@ questions = [
 
         "* Downsampling with upweighting improves performance on the minority class while speeding up convergence and keeping the predictions calibrated.\n"
         
-        "* This approach does not guarantee calibrated predictions and does not improve training run time.\n"
+        "* Update the weights ... does not guarantee calibrated predictions and does not improve training run time.\n"
         
-        "* This approach increases run time by adding threshold tuning and calibration on top of model training.\n"
+        "* Tune the classification threshold ... increases run time by adding threshold tuning and calibration on top of model training.\n"
         
         "* Upsampling increases training run time by providing more data samples during training.",
 
@@ -812,7 +812,7 @@ questions = [
     # Udemy - Google Cloud Machine Learning Engineer Certification Prep (50 questions)
     {
         'question':
-        "You are supporting a group of data analysts who want to build ML models using a managed service. They also want the ability to customize their models and tune hyperparameters.  What managed service in Google Cloud would you recommend?",
+        "You are supporting a group of data analysts who want to build ML models using a managed service. They also want the ability to customize their models and tune hyperparameters. What managed service in Google Cloud would you recommend?",
         'tags': [1, 'udemy'],
         'options': {
             'A': "Vertex AI custom training",
@@ -854,13 +854,16 @@ questions = [
         },
         'answers': ['D'],
         'explanation':
-        "Dialogflow is a service for creating conversational user interfaces. Speech-to-Text converts spoken words to written words. Text-to-Speech converts text words to human voice-like sound. AutoML Tables is a machine learning service for structured data.",
+        "Dialogflow is a service for creating conversational user interfaces.\n"
+        "Speech-to-Text converts spoken words to written words.\n"
+        "Text-to-Speech converts text words to human voice-like sound.\n"
+        "AutoML Tables is a machine learning service for structured data.",
         'references': [
             'https://cloud.google.com/dialogflow/docs']
     },
     {
         'question':
-        "You lead a team of machine learning engineers working for an IoT startup. You need to create a machine learning model to predict the likelihood of a device failure in manufacturing environments. The device generates a stream of metrics every 60 seconds. The metrics include 2 categorical values, 7 integer values, and 1 floating point value. The floating point value ranges from 0 to 100.  For the purposes of the model, the floating point value is more precise than needed.  Mapping that value to a feature with possible values \"high\", \"medium\", and \"low\" is sufficient. What feature engineering technique would you use to transform the floating point value to high, medium, or low?",
+        "You lead a team of machine learning engineers working for an IoT startup. You need to create a machine learning model to predict the likelihood of a device failure in manufacturing environments. The device generates a stream of metrics every 60 seconds. The metrics include 2 categorical values, 7 integer values, and 1 floating point value. The floating point value ranges from 0 to 100. For the purposes of the model, the floating point value is more precise than needed. Mapping that value to a feature with possible values \"high\", \"medium\", and \"low\" is sufficient. What feature engineering technique would you use to transform the floating point value to high, medium, or low?",
         'tags': [4, 'udemy'],
         'options': {
             'A': "L1 Regularization",
@@ -878,7 +881,7 @@ questions = [
     },
     {
         'question':
-        "You have trained a machine learning model. After training is complete, the model scores high on accuracy and F1 score when measured using training data; however, when validation data is used, the accuracy and F1 score l are much lower.  What is the likely cause of this problem?",
+        "You have trained a machine learning model. After training is complete, the model scores high on accuracy and F1 score when measured using training data; however, when validation data is used, the accuracy and F1 score l are much lower. What is the likely cause of this problem?",
         'tags': [5, 'udemy'],
         'options': {
             'A': "Overfitting",
@@ -888,7 +891,7 @@ questions = [
         },
         'answers': ['A'],
         'explanation':
-        "This is an example of overfitting because the model has not generalized form the training data. Underfitting would have resulted in poor performance with training data.  Insufficiently complex models can lead to underfitting but not overfitting. A small learning rate will lead to longer training times but would not cause the described problem.",
+        "This is an example of overfitting because the model has not generalized form the training data. Underfitting would have resulted in poor performance with training data. Insufficiently complex models can lead to underfitting but not overfitting. A small learning rate will lead to longer training times but would not cause the described problem.",
         'references': []
     },
     {
@@ -918,12 +921,12 @@ questions = [
         },
         'answers': ['B'],
         'explanation':
-        "AutoML Tables uses structured data to build models with little input from users.  Spark ML and Tensorflow is suitable for modelers with programming skills. There is no Bigtable ML but BigQuery ML is a managed service for building machine learning models in BigQuery using SQL.",
+        "AutoML Tables uses structured data to build models with little input from users. Spark ML and Tensorflow is suitable for modelers with programming skills. There is no Bigtable ML but BigQuery ML is a managed service for building machine learning models in BigQuery using SQL.",
         'references': []
     },
     {
         'question':
-        "When testing a regression model to predict the selling price of houses.  After several iterations of model building, you note that small changes in a few features can lead to large differences in the output. This is an example of what kind of problem?",
+        "When testing a regression model to predict the selling price of houses. After several iterations of model building, you note that small changes in a few features can lead to large differences in the output. This is an example of what kind of problem?",
         'tags': [8, 'udemy'],
         'options': {
             'A': "Low variance",
@@ -933,12 +936,12 @@ questions = [
         },
         'answers': ['B'],
         'explanation':
-        "This is an example of high variance.  High bias occurs when relationships are missed. Low bias and low variance are desired in ML models and are not a problem.",
+        "This is an example of high variance. High bias occurs when relationships are missed. Low bias and low variance are desired in ML models and are not a problem.",
         'references': []
     },
     {
         'question':
-        "You are an ML engineer with a startup building machine learning models for the pharmaceutical industry. You are currently developing a deep learning machine learning model to predict the toxicity of drug candidates. The training data set consists of a large number of chemical and physical attributes and there is a large number of instances.  Training takes several days on an n2 type Compute Engine virtual machine.  What would you recommend to reduce the training time without compromising the quality of the model?",
+        "You are an ML engineer with a startup building machine learning models for the pharmaceutical industry. You are currently developing a deep learning machine learning model to predict the toxicity of drug candidates. The training data set consists of a large number of chemical and physical attributes and there is a large number of instances. Training takes several days on an n2 type Compute Engine virtual machine. What would you recommend to reduce the training time without compromising the quality of the model?",
         'tags': [9, 'udemy'],
         'options': {
             'A': "Use TPUs",
@@ -948,7 +951,7 @@ questions = [
         },
         'answers': ['A'],
         'explanation':
-        "TPUs are designed to accelerate the dominant computation in deep learning model training.  Using a smaller data set by sampling would reduce training time but would likely compromise the quality of the model. Increasing CPUs would improve performance but not as much or as cost-effectively as TPUs. Increasing memory may reduce training time if memory is constrained but it will not decrease training time as much as using a TPU.",
+        "TPUs are designed to accelerate the dominant computation in deep learning model training. Using a smaller data set by sampling would reduce training time but would likely compromise the quality of the model. Increasing CPUs would improve performance but not as much or as cost-effectively as TPUs. Increasing memory may reduce training time if memory is constrained but it will not decrease training time as much as using a TPU.",
         'references': []
     },
     {
@@ -983,7 +986,7 @@ questions = [
         },
         'answers': ['B'],
         'explanation':
-        "This is an example of data leakage because you are making additional data available during training that wold is not available when running predictions, in this case, additional information is used to perform normalization and standardization.  Regularization is a technique to prevent overfitting. No bias is introduced and there is no indication that classes are imbalanced.",
+        "This is an example of data leakage because you are making additional data available during training that wold is not available when running predictions, in this case, additional information is used to perform normalization and standardization. Regularization is a technique to prevent overfitting. No bias is introduced and there is no indication that classes are imbalanced.",
         'references': []
     },
     {
@@ -1013,7 +1016,7 @@ questions = [
         },
         'answers': ['C'],
         'explanation':
-        "Descriptive statistics are used to measure both central tendency and the spread of values.  The likelihood of contributing to a prediction is not measured until after a model is created.",
+        "Descriptive statistics are used to measure both central tendency and the spread of values. The likelihood of contributing to a prediction is not measured until after a model is created.",
         'references': []
     },
     {
@@ -1028,7 +1031,7 @@ questions = [
         },
         'answers': ['A'],
         'explanation':
-        "This is an imbalnaced data set because one class has significantly more instances than the others.  Standardization and normalization are techniques for preparing the data set. There is no such thing as a marginalized data set in machine learning.",
+        "This is an imbalnaced data set because one class has significantly more instances than the others. Standardization and normalization are techniques for preparing the data set. There is no such thing as a marginalized data set in machine learning.",
         'references': []
     },
     {
@@ -1043,7 +1046,7 @@ questions = [
         },
         'answers': ['D'],
         'explanation':
-        "Collecting  more data, generating synthetic data, and resampling are all techniques for working with imbalanced data sets.",
+        "Collecting more data, generating synthetic data, and resampling are all techniques for working with imbalanced data sets.",
         'references': []
     },
     {
@@ -1058,7 +1061,7 @@ questions = [
         },
         'answers': ['B'],
         'explanation':
-        "Data augmentation is a set of techniques for artificially increasing the number of instances in a data set by manipulating other instances.  Normalization is a data preparation technique. Data leakage is the use of data in training that is not available during prediction and is unwanted. Imbalanced classes is not a technique for expanding the size of a dataset.",
+        "Data augmentation is a set of techniques for artificially increasing the number of instances in a data set by manipulating other instances. Normalization is a data preparation technique. Data leakage is the use of data in training that is not available during prediction and is unwanted. Imbalanced classes is not a technique for expanding the size of a dataset.",
         'references': []
     },
     {
@@ -1073,7 +1076,7 @@ questions = [
         },
         'answers': ['A'],
         'explanation':
-        "Parameter servers store model parameters and share state.  Evaluators evaluate models while primary replicas manage other nodes. There is no state servers.",
+        "Parameter servers store model parameters and share state. Evaluators evaluate models while primary replicas manage other nodes. There is no state servers.",
         'references': []
     },
     {
@@ -1103,7 +1106,7 @@ questions = [
         },
         'answers': ['C'],
         'explanation':
-        "This is an example of ordinal encoding.  One-hot encoding maps to a bit vector with only one bit set to one. Feature hashing applies a hash function to compute a representation. Data augmentation is not an encoding scheme, it is a set of techniques for increasing the size of a data set.",
+        "This is an example of ordinal encoding. One-hot encoding maps to a bit vector with only one bit set to one. Feature hashing applies a hash function to compute a representation. Data augmentation is not an encoding scheme, it is a set of techniques for increasing the size of a data set.",
         'references': []
     },
     {
@@ -1119,7 +1122,7 @@ questions = [
         },
         'answers': ['A', 'B'],
         'explanation':
-        "Biased data distributions and proxy variables can introduce bias in a machine model. Data leakage can cause problems but is not likely to introduce bias that isn't already in the data set. Data augmentation can continue to represent bias in a data set but does not introduce new bias.  Normalization is a data preparation operations.",
+        "Biased data distributions and proxy variables can introduce bias in a machine model. Data leakage can cause problems but is not likely to introduce bias that isn't already in the data set. Data augmentation can continue to represent bias in a data set but does not introduce new bias. Normalization is a data preparation operations.",
         'references': []
     },
     {
@@ -1152,7 +1155,7 @@ questions = [
         "* The Pearson's Correlation is used for measuring the linear correlation between two variables.\n"
         "* ANOVA is used to measure the difference among means.\n"  
         "* Kendall's Rank Coefficient is used for measuring numeric and categorical correlations.\n"
-        " The Chi-Squared test is used for measuring the correlation between categorical values.",
+        "* The Chi-Squared test is used for measuring the correlation between categorical values.",
         'references': []
     },
     {
@@ -1167,7 +1170,10 @@ questions = [
         },
         'answers': ['C'],
         'explanation':
-        "The Chi-Squared test is used for measuring the correlation between categorical values. Pearson's Correlation is used for measuring the linear correlation between two variables. ANOVA is used to measure the difference among means.  Kendall's Rank Coefficient is used for measuring numeric and categorical correlations.",
+        "* The Chi-Squared test is used for measuring the correlation between categorical values.\n"
+        "* Pearson's Correlation is used for measuring the linear correlation between two variables.\n"
+        "* ANOVA is used to measure the difference among means.\n"
+        "* Kendall's Rank Coefficient is used for measuring numeric and categorical correlations.",
         'references': []
     },
     {
@@ -1199,7 +1205,7 @@ questions = [
         },
         'answers': ['A', 'C'],
         'explanation':
-        "Custom container images running in Vertex AI must have an HTTP server as well as support health checks and liveliness checks.  Request and response message sizes must be 1.5MB or less. Support for GPUs or TPUs is not required.",
+        "Custom container images running in Vertex AI must have an HTTP server as well as support health checks and liveliness checks. Request and response message sizes must be 1.5MB or less. Support for GPUs or TPUs is not required.",
         'references': []
     },
     {
@@ -1214,7 +1220,7 @@ questions = [
         },
         'answers': ['B'],
         'explanation':
-        "You are training large deep learning networks in Kubernetes Engine and want to use a cost-effective accelerator. You do not need high precision floating point operations. What would you choose?",
+        "",
         'references': []
     },
     {
@@ -1229,7 +1235,7 @@ questions = [
         },
         'answers': ['A'],
         'explanation':
-        "You would not want to delete instance with missing data when a significant portion of the instances are missing data because you would lose many instances.  When a small number of instance are missing data, removing those instances would not adversely affect results. Since all data for all features are removed when removing a row with any missing data, the number of features with missing data does not impact the final results.",
+        "You would not want to delete instance with missing data when a significant portion of the instances are missing data because you would lose many instances. When a small number of instance are missing data, removing those instances would not adversely affect results. Since all data for all features are removed when removing a row with any missing data, the number of features with missing data does not impact the final results.",
         'references': []
     },
     {
@@ -1244,7 +1250,7 @@ questions = [
         },
         'answers': ['A'],
         'explanation':
-        "The Last Observed Value Carried Forward strategy works well with time series data.  Categorical values with a small number of possible values is not a good candidate since the previous value may have not relation to next instance in the data set.  The technique is irrelevant to overfitting or underfitting.",
+        "The Last Observed Value Carried Forward strategy works well with time series data. Categorical values with a small number of possible values is not a good candidate since the previous value may have not relation to next instance in the data set. The technique is irrelevant to overfitting or underfitting.",
         'references': []
     },
     {
@@ -1334,7 +1340,7 @@ questions = [
         },
         'answers': ['C'],
         'explanation':
-        "BigQuery ML uses SQL to create and serve machine learning models and dose not require programming in a language such as Python or Java. Cloud Dataflow is for data processing, not machine learning.  Cloud Dataproc could be used for machine learning but requires programming in Java, Python or other programming languages. Bigtable does not support machine learning directly in the service.",
+        "BigQuery ML uses SQL to create and serve machine learning models and dose not require programming in a language such as Python or Java. Cloud Dataflow is for data processing, not machine learning. Cloud Dataproc could be used for machine learning but requires programming in Java, Python or other programming languages. Bigtable does not support machine learning directly in the service.",
         'references': []
     },
     {
@@ -1349,7 +1355,7 @@ questions = [
         },
         'answers': ['A'],
         'explanation':
-        "Feature vectors are the standard way of inputting data to a machine learning algorithm. Lists of categorical values are not accessible to many machine learning algorithms.  2-dimensional and 3-dimensional arrays are mapped to 1-dimensional feature vectors before submitting data to the machine learning training algorithm.",
+        "Feature vectors are the standard way of inputting data to a machine learning algorithm. Lists of categorical values are not accessible to many machine learning algorithms. 2-dimensional and 3-dimensional arrays are mapped to 1-dimensional feature vectors before submitting data to the machine learning training algorithm.",
         'references': []
     },
     {
@@ -1364,7 +1370,10 @@ questions = [
         },
         'answers': ['B'],
         'explanation':
-        "Quantization is a technique for reducing model size without reducing quality. ANOVA is a statistical test for comparing the means of two or more populations.  Data augmentation is used to create new training instances based on existing instances.  Bucketing is a technique of mapping feature values into a smaller set of values.",
+        "Quantization is a technique for reducing model size without reducing quality.\n"
+        "ANOVA is a statistical test for comparing the means of two or more populations.\n"
+        "Data augmentation is used to create new training instances based on existing instances.\n"
+        "Bucketing is a technique of mapping feature values into a smaller set of values.",
         'references': []
     },
     {
@@ -1379,12 +1388,12 @@ questions = [
         },
         'answers': ['C'],
         'explanation':
-        "Base64 is the recommended encoding for images.  CSV and Avro are file formats for structured data. Capacitor format is used by BigQuery to store data in compressed, columnar format.",
+        "Base64 is the recommended encoding for images. CSV and Avro are file formats for structured data. Capacitor format is used by BigQuery to store data in compressed, columnar format.",
         'references': []
     },
     {
         'question':
-        "You are making a large number of predictions using an API endpoint.  Several of the services making requests could send batches of requests instead of individual requests to the endpoint.  How could you improve the efficiency of serving predictions?",
+        "You are making a large number of predictions using an API endpoint. Several of the services making requests could send batches of requests instead of individual requests to the endpoint. How could you improve the efficiency of serving predictions?",
         'tags': [38, 'udemy'],
         'options': {
             'A': "Use batches with a large batch size to take advantage of vectorization",
@@ -1394,7 +1403,7 @@ questions = [
         },
         'answers': ['A'],
         'explanation':
-        "Using batches with large batch size will take advantage of vectorization and improve efficiency.  Vertically scaling will increase throughput but using the API and single requests will still use more compute resources than using batch processing. Training with additional data or re-training more frequently will not change serving efficiency.",
+        "Using batches with large batch size will take advantage of vectorization and improve efficiency. Vertically scaling will increase throughput but using the API and single requests will still use more compute resources than using batch processing. Training with additional data or re-training more frequently will not change serving efficiency.",
         'references': []
     },
     {
@@ -1409,7 +1418,7 @@ questions = [
         },
         'answers': ['B'],
         'explanation':
-        "Vertex AI Pipelines provides orchestration in Vertex AI.  Vertex AI Prediction is for serving models, Vertex AI Experiments is for tracking training experiments, and Vertex AI Workbench provides managed and user managed notebooks for development.",
+        "Vertex AI Pipelines provides orchestration in Vertex AI. Vertex AI Prediction is for serving models, Vertex AI Experiments is for tracking training experiments, and Vertex AI Workbench provides managed and user managed notebooks for development.",
         'references': []
     },
     {
@@ -1424,7 +1433,7 @@ questions = [
         },
         'answers': ['A'],
         'explanation':
-        "Using the tf.data API to maximize the efficiency of data pipelines using GPUs and TPUs is the correct answer.  XGBoost is another machine learning platform and will not improve the efficiency of a TensorFlow model. Early stopping is an optimization for training, not serving.  Scaling up CPUs or adding more CPUs will not significantly change the efficiency of using GPUs or TPUs.",
+        "Using the tf.data API to maximize the efficiency of data pipelines using GPUs and TPUs is the correct answer. XGBoost is another machine learning platform and will not improve the efficiency of a TensorFlow model. Early stopping is an optimization for training, not serving. Scaling up CPUs or adding more CPUs will not significantly change the efficiency of using GPUs or TPUs.",
         'references': []
     },
     {
@@ -1439,7 +1448,7 @@ questions = [
         },
         'answers': ['B'],
         'explanation':
-        "The correct answer is managed data sets in a central location and create labels and annotations only.  There are no enhanced predefined roles for Vertex AI datasets.",
+        "The correct answer is managed data sets in a central location and create labels and annotations only. There are no enhanced predefined roles for Vertex AI datasets.",
         'references': []
     },
     {
@@ -1454,7 +1463,7 @@ questions = [
         },
         'answers': ['B'],
         'explanation':
-        "Vetext AI Datasets support CSV files and BigQuery tables and views for tabular data.  Bigtable tables and Avro files are not supported.",
+        "Vetext AI Datasets support CSV files and BigQuery tables and views for tabular data. Bigtable tables and Avro files are not supported.",
         'references': []
     },
     {
@@ -1501,12 +1510,12 @@ questions = [
         },
         'answers': ['A'],
         'explanation':
-        "Data poisoning is a security risk associated with an attacker compromising the training process in order to train the model to behave in ways the attacker wants.  Missing data and inconsistent data are data risks that can compromise a model but they are not security risks. Insufficiently agreed upon objectives is a process risk but not a security risk.",
+        "Data poisoning is a security risk associated with an attacker compromising the training process in order to train the model to behave in ways the attacker wants. Missing data and inconsistent data are data risks that can compromise a model but they are not security risks. Insufficiently agreed upon objectives is a process risk but not a security risk.",
         'references': []
     },
     {
         'question':
-        "You are training a classifier using XGBoost in Vertex AI.  Training is proceeding slower than expected so you add GPUs to your training server.  There is no noticeable difference in the training time. Why is this?",
+        "You are training a classifier using XGBoost in Vertex AI. Training is proceeding slower than expected so you add GPUs to your training server. There is no noticeable difference in the training time. Why is this?",
         'tags': [46, 'udemy'],
         'options': {
             'A': "GPUs are only useful for improving serving efficiency",
@@ -1546,12 +1555,12 @@ questions = [
         },
         'answers': ['D'],
         'explanation':
-        "TFRecords is based on protobuf, a binary nested file format and optimized for TensorFlow.  JSON and XML are plain text formats and not as efficient as TFRecord.  CSV is not a nested file format.",
+        "TFRecords is based on protobuf, a binary nested file format and optimized for TensorFlow. JSON and XML are plain text formats and not as efficient as TFRecord. CSV is not a nested file format.",
         'references': []
     },
     {
         'question':
-        "A robotics developer has created a machine learning model to detect unripe apples in images. Robots use this information to remove unripe apples from a conveyor belt.  The engineers who developed this model are using it as a starting model for training a model to detect unripe pears.  This is an example of what kind of learning?",
+        "A robotics developer has created a machine learning model to detect unripe apples in images. Robots use this information to remove unripe apples from a conveyor belt. The engineers who developed this model are using it as a starting model for training a model to detect unripe pears. This is an example of what kind of learning?",
         'tags': [49, 'udemy'],
         'options': {
             'A': "Unsupervised learning",
@@ -1569,7 +1578,7 @@ questions = [
     },
     {
         'question':
-        "A retailer has deployed a machine learning model to predict when a customer is likely to abandon a shopping cart. A MLOps engineer notices that the feature data distribution in production deviates from feature data distribution in the latest training data set.  This is an example of what kind of problem?",
+        "A retailer has deployed a machine learning model to predict when a customer is likely to abandon a shopping cart. A MLOps engineer notices that the feature data distribution in production deviates from feature data distribution in the latest training data set. This is an example of what kind of problem?",
         'tags': [50, 'udemy'],
         'options': {
             'A': "Skew",
@@ -1579,7 +1588,10 @@ questions = [
         },
         'answers': ['A'],
         'explanation':
-        "Skew is the problem of  feature data distribution in production deviating from feature data distribution in training data. Drift occurs when feature data distribution in production changes significantly over time. Data leakage is a problem in training when data not available when making predictions is used in training. Underfitting occurs when a model does not perform well even on training data set because the model is unable to learn.",
+        "Skew is the problem of feature data distribution in production deviating from feature data distribution in training data.\n"
+        "Drift occurs when feature data distribution in production changes significantly over time.\n"
+        "Data leakage is a problem in training when data not available when making predictions is used in training.\n"
+        "Underfitting occurs when a model does not perform well even on training data set because the model is unable to learn.",
         'references': []
     },
     # Packt - Journey to Become a Google Cloud Machine Learning Engineer (2022) - Dr. Logan Song (30 questions)
@@ -1726,7 +1738,8 @@ questions = [
         },
         'answers': ['B'],
         'explanation':
-        "Categorical entropy is better to use when you want to prevent the model from giving more importance to a certain class – the same as the one-hot encoding idea. Sparse categorical entropy is more optimal when your classes are mutually exclusive (for example, when each sample belongs exactly to one class)",
+        "Categorical entropy is better to use when you want to prevent the model from giving more importance to a certain class – the same as the one-hot encoding idea.\n"
+        "Sparse categorical entropy is more optimal when your classes are mutually exclusive (for example, when each sample belongs exactly to one class)",
         'references': []
     },
     {
@@ -3178,7 +3191,7 @@ questions = [
         "Categories are not related to Data Validation. Usually, they are categorical, string variables that in ML usually are mapped in a numerical set before training.\n"
         "* Omitted values are a problem because they may change fundamental statistics like average, for example.\n"
         "* Duplicate examples may change fundamental statistics, too.\n"
-        "For example, we may have duplicates when a program loops and creates the same data several times."
+        "For example, we may have duplicates when a program loops and creates the same data several times.\n"
         "* Having bad labels (with supervised learning) or bad features means obtaining a bad model.",
         'references': [
             'https://developers.google.com/machine-learning/crash-course/representation/cleaning-data'
@@ -3312,7 +3325,7 @@ questions = [
         'question':
         "You are a junior Data Scientist. You are working with a linear regression model with sklearn.\n"
         "Your outcome model presented a good R-square - coefficient of determination, but the final results were poor.\n"
-        "When you asked for advice, your mentor laughed and said that you failed because of the  Anscombe Quartet problem.\n"
+        "When you asked for advice, your mentor laughed and said that you failed because of the Anscombe Quartet problem.\n"
         "What are the other possible problems described by the famous Anscombe Quartet?",
         'tags': [49, 'whizlabs1'],
         'options': {
@@ -3579,7 +3592,7 @@ questions = [
         },
         'answers': ['A'],
         'explanation': 
-        "TensorFlow Extended (TFX) is a  set of open-source libraries to build and execute ML pipelines in production. Its main functions are:\n"
+        "TensorFlow Extended (TFX) is a set of open-source libraries to build and execute ML pipelines in production. Its main functions are:\n"
         "* Metadata management\n"
         "* Model validation\n"
         "* Deployment\n"
@@ -3592,7 +3605,7 @@ questions = [
         "* Deploy models\n"
         "* Manage prediction: Batch, Online and monitoring\n"
         "* Manage model versions: workflows and retraining\n"
-        "Sagemaker is a  managed product in AWS, not GCP.\n"
+        "Sagemaker is a managed product in AWS, not GCP.\n"
         "Kubeflow Pipelines don’t deal with production control.\n"
         "Kubeflow Pipelines is an open-source platform designed specifically for creating and deploying ML workflows based on Docker containers.\n"
         "Their main features:\n"
@@ -3727,7 +3740,7 @@ questions = [
         "Which is the correct procedure (Select TWO)?",
         'tags': [8, 'whizlabs2'],
         'options': {
-            'A': "Save the model in a  Docker container",
+            'A': "Save the model in a Docker container",
             'B': "Set a VM with a GPU processor",
             'C': "Use TensorFlow Serving",
             'D': "Create an endpoint and deploy to that endpoint"
@@ -3851,7 +3864,7 @@ questions = [
         "In supervised learning, the correctness of label data, together with the quality of all your training data, is utterly important for the resulting model and the quality of the future predictions.\n"
         "If you cannot have your data correctly labeled, you may request professional people to complete your training data.\n"
         "GCP has a service for this: Vertex AI data labeling. Human labelers will prepare correct labels following your directions.\n"
-        "You have to  set up a data labeling job with:\n"
+        "You have to set up a data labeling job with:\n"
         "* The dataset\n"
         "* A list, vocabulary of the possible labels\n"
         "* An instructions document for the professional people\n\n"
@@ -3941,7 +3954,7 @@ questions = [
         "* It creates stumps, that is, trees with only one node and two leaves.\n"
         "* Stumps with less error win.\n"
         "* Ordering is built in such a way as to reduce errors.\n\n"
-        "Gradient Boost is built with multiple decision trees, too, with the following differences from  AdaBoost;\n"
+        "Gradient Boost is built with multiple decision trees, too, with the following differences from AdaBoost;\n"
         "* Trees instead stumps\n"
         "* It uses a loss function to minimize errors.\n"
         "* Trees are selected to predict the difference from actual values\n\n"
@@ -4054,7 +4067,7 @@ questions = [
         "TensorFlow Probability main features are:\n"
         "* Probability distributions and differentiable and injective (one to one) functions.\n"
         "* Tools for deep probabilistic models building.\n"
-        "* Inference and Simulation methods support:  Markov chain, Monte Carlo.\n"
+        "* Inference and Simulation methods support: Markov chain, Monte Carlo.\n"
         "* Optimizers such as Nelder-Mead, BFGS, and SGLD.\n"
         "All the other answers are wrong because they don’t deal with traditional statistical methodologies.",
         'references': [
@@ -4122,7 +4135,7 @@ questions = [
         'question':
         "Your company does not have a great ML experience. Therefore they want to start with a service that is as smooth, simple and managed as possible.\n"
         "The idea is to use BigQuery ML. Therefore you are considering whether it can cover all the functionality you need. Various projects start with the design and set up various models using various techniques and algorithms in your company.\n"
-        "Which of these techniques/algorithms is not supported by  BigQuery ML?",
+        "Which of these techniques/algorithms is not supported by BigQuery ML?",
         'tags': [22, 'whizlabs2'],
         'options': {
             'A': "Wide-and-Deep DNN models",
@@ -4297,7 +4310,7 @@ questions = [
         "It lets you see data points distributions with different shapes and colors and interactively try new inferences.\n"
         "Moreover, it shows which features affect your model the most, together with many other characteristics.\n"
         "All without code.\n"
-        "* Tensorboard provides visualization and tooling needed for experiments, not for explaining inference. You can access the What-If Tool from  Tensorboard.\n"
+        "* Tensorboard provides visualization and tooling needed for experiments, not for explaining inference. You can access the What-If Tool from Tensorboard.\n"
         "* Tableau and Looker are graphical tools for data reporting.\n"
         "* LIT is for NLP models.",
         'references': [
@@ -4377,7 +4390,7 @@ questions = [
         "EXCEPT gives all rows or fields on the left side except the one coming from the right side of the query.\n"
         "Example:\n"
         "SELECT\n"
-        "  * EXCEPT(mylabel) myvalue AS label\n\n"
+        "* EXCEPT(mylabel) myvalue AS label\n\n"
         "* ROLLUP is a group function for subtotals.\n"
         "* UNNEST gives the elements of a structured file.\n"
         "* LAG returns the field value on a preceding row.",
@@ -4601,7 +4614,7 @@ questions = [
         "* Decision Tree Models are explainable without any sophisticated tool for enlightenment.\n\n"
         "It uses three methods for feature attributions:\n"
         "* sampled Shapley: Uses scores for each feature and their permutations\n"
-        "* integrated gradextension of the integrated gradients method creates a saliency map with  overlapping regions of the image (like in the picture)",
+        "* integrated gradextension of the integrated gradients method creates a saliency map with overlapping regions of the image (like in the picture)",
         'references': [
             'https://cloud.google.com/resources/mlops-whitepaper',
             'https://cloud.google.com/vertex-ai/docs/explainable-ai/overview'
@@ -4714,7 +4727,7 @@ questions = [
         "Which of these answers are correct (pick 4)?",
         'tags': [45, 'whizlabs2'],
         'options': {
-            'A': "Kubeflow pipelines and  Vertex Pipelines are incompatible",
+            'A': "Kubeflow pipelines and Vertex Pipelines are incompatible",
             'B': "You may use Kubeflow Pipelines written with DSL in Vertex AI",
             'C': "Kubeflow pipelines work only in GCP",
             'D': "Kubeflow pipelines may work in any environment",
@@ -4737,7 +4750,7 @@ questions = [
     {
         'question':
         "Your company runs a big retail website. You develop many ML models for all the business activities.\n"
-        "You migrated to Google Cloud. Your models are developed with PyTorch, TensorFlow, and BigQueryML. You also use BigTable and CloudSQL, and Cloud Storage, of course. You need to use input tabular data in CSV format.  You are working with Vertex AI.\n"
+        "You migrated to Google Cloud. Your models are developed with PyTorch, TensorFlow, and BigQueryML. You also use BigTable and CloudSQL, and Cloud Storage, of course. You need to use input tabular data in CSV format. You are working with Vertex AI.\n"
         "How do you manage them in the best way (pick 2)?",
         'tags': [46, 'whizlabs2'],
         'options': {
@@ -4827,7 +4840,7 @@ questions = [
         'answers': ['D'],
         'explanation': 
         "Cloud CDN is the service that caches and delivers static content from the closest locations (edge locations) to customers to accelerate web and mobile applications. This is a very important service for the Cloud but out of scope for MLOps.\n"
-        "MLOps covers all processes related to ML models;  experimentation, preparation, testing, deployment and above all continuous integration and delivery.\n"
+        "MLOps covers all processes related to ML models; experimentation, preparation, testing, deployment and above all continuous integration and delivery.\n"
         "The MLOps environment is designed to provide (some of) the following:\n"
         "* Environment for testing and experimentation\n"
         "* Source control, like Github\n"
@@ -4920,7 +4933,7 @@ questions = [
         'answers': ['B', 'D'],
         'explanation':
         "You can export a Dataset; when you do that, no additional copies of data are generated. The result is only JSONL files with all the useful information, including the Cloud Storage files URIs.\n"
-        "But you have to grant access to these  Cloud Storage files with a Service account or a signed URL, if to be used outside GCP.\n"
+        "But you have to grant access to these Cloud Storage files with a Service account or a signed URL, if to be used outside GCP.\n"
         "* Let them use your GCP Account, Copy the data in a removable storage are wrong mainly for security reasons.\n"
         "* Annotations are written in JSON files.",
         'references': [
@@ -5259,13 +5272,13 @@ questions = [
         'explanation':
         
         "* (correct) L1 regularization may cause informative features to get a weight of exactly 0.0.\n"
-        "Be careful, L1 regularization may cause the following kinds of features to be given weights of exactly 0:"
+        "Be careful, L1 regularization may cause the following kinds of features to be given weights of exactly 0:\n"
         " * Weakly informative features.\n"
         " * Strongly informative features on different scales.\n"
         " * Informative features strongly correlated with other similarly informative features.\n\n"
         
         "* (correct) L1 regularization will encourage most of the non-informative weights to be exactly 0.0.\n"
-        "L1 regularization of sufficient lambda tends to encourage non-informative weights to become exactly 0.0. By doing so, these non-informative features leave the model."
+        "L1 regularization of sufficient lambda tends to encourage non-informative weights to become exactly 0.0. By doing so, these non-informative features leave the model.\n\n"
         
         "* (wrong) L1 regularization will encourage many of the non-informative weights to be nearly (but not exactly) 0.0.\n"
         "In general, L1 regularization of sufficient lambda tends to encourage non-informative features to weights of exactly 0.0. Unlike L2 regularization, L1 regularization \"pushes\" just as hard toward 0.0 no matter how far the weight is from 0.0.",
@@ -5530,7 +5543,9 @@ questions = [
         'options': {},
         'answers': [],
         'explanation':
-        "gcloud config get-value core/project",
+        "* gcloud config get-value project\n"
+        "* gcloud config get-value core/project\n"
+        "* gcloud info --format='value(config.project)'",
         'references': []
     },
     {
@@ -5576,7 +5591,7 @@ questions = [
     },
     {
         'question':
-        "Command to grant Vertex AI Model Registry permission to your service account, if you are not owner of your projec",
+        "Command to grant Vertex AI Model Registry permission to your service account, if you are not owner of your project.",
         'tags': ['gcp'],
         'options': {},
         'answers': [],
@@ -5585,5 +5600,213 @@ questions = [
         'references': [
             'https://cloud.google.com/bigquery-ml/docs/managing-models-vertex'
         ]
+    },
+    # handson-ml3
+    {
+        'question':
+        "How would you define machine learning?",
+        'tags': ['handson-ml3', 1],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "Machine Learning is about building systems that can learn from data. Learning means getting better at some task, given some performance measure.",
+        'references': []
+    },
+    {
+        'question':
+        "Can you name four types of applications where it shines?",
+        'tags': ['handson-ml3', 2],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "Machine Learning is great for:\n"
+        " * complex problems for which we have no algorithmic solution\n"
+        " * to replace long lists of hand-tuned rules\n"
+        " * to build systems that adapt to fluctuating environments\n"
+        " * to help humans learn (e.g., data mining).",
+        'references': []
+    },
+    {
+        'question':
+        "What is a labeled training set?",
+        'tags': ['handson-ml3', 3],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "A labeled training set is a training set that contains the desired solution (a.k.a. a label) for each instance.",
+        'references': []
+    },
+    {
+        'question':
+        "What are the two most common supervised tasks?",
+        'tags': ['handson-ml3', 4],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "Regression and classification.",
+        'references': []
+    },
+    {
+        'question':
+        "Can you name four common unsupervised tasks?",
+        'tags': ['handson-ml3', 5],
+        'options': {},
+        'answers': [],
+        'explanation':
+        " * clustering\n"
+        " * visualization\n"
+        " * dimensionality reduction\n"
+        " * association rule learning",
+        'references': []
+    },
+    {
+        'question':
+        "What type of algorithm would you use to allow a robot to walk in various unknown terrains?",
+        'tags': ['handson-ml3', 6],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "Reinforcement Learning is likely to perform best if we want a robot to learn to walk in various unknown terrains, since this is typically the type of problem that Reinforcement Learning tackles. It might be possible to express the problem as a supervised or semi-supervised learning problem, but it would be less natural.",
+        'references': []
+    },
+    {
+        'question':
+        "What type of algorithm would you use to segment your customers into multiple groups?",
+        'tags': ['handson-ml3', 7],
+        'options': {},
+        'answers': [],
+        'explanation':
+        " * If you don't know how to define the groups, then you can use a clustering algorithm (unsupervised learning) to segment your customers into clusters of similar customers.\n"
+        " * If you know what groups you would like to have, then you can feed many examples of each group to a classification algorithm (supervised learning), and it will classify all your customers into these groups.",
+        'references': []
+    },
+    {
+        'question':
+        "Would you frame the problem of spam detection as a supervised learning problem or an unsupervised learning problem?",
+        'tags': ['handson-ml3', 8],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "Spam detection is a typical supervised learning problem: the algorithm is fed many emails along with their labels (spam or not spam).",
+        'references': []
+    },
+    {
+        'question':
+        "What is an online learning system?",
+        'tags': ['handson-ml3', 9],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "An online learning system can learn incrementally, as opposed to a batch learning system. This makes it capable of adapting rapidly to both changing data and autonomous systems, and of training on very large quantities of data.",
+        'references': []
+    },
+    {
+        'question':
+        "What is out-of-core learning?",
+        'tags': ['handson-ml3', 10],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "Out-of-core algorithms can handle vast quantities of data that cannot fit in a computer's main memory. An out-of-core learning algorithm chops the data into mini-batches and uses online learning techniques to learn from these mini-batches.",
+        'references': []
+    },
+    {
+        'question':
+        "What type of algorithm relies on a similarity measure to make predictions?",
+        'tags': ['handson-ml3', 11],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "An instance-based learning system learns the training data by heart; then, when given a new instance, it uses a similarity measure to find the most similar learned instances and uses them to make predictions.",
+        'references': []
+    },
+    {
+        'question':
+        "What is the difference between a model parameter and a model hyperparameter?",
+        'tags': ['handson-ml3', 12],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "A model has one or more model parameters that determine what it will predict given a new instance (e.g., the slope of a linear model). A learning algorithm tries to find optimal values for these parameters such that the model generalizes well to new instances. A hyperparameter is a parameter of the learning algorithm itself, not of the model (e.g., the amount of regularization to apply).",
+        'references': []
+    },
+    {
+        'question':
+        "What do model-based algorithms search for? What is the most common strategy they use to succeed? How do they make predictions?",
+        'tags': ['handson-ml3', 13],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "Model-based learning algorithms search for an optimal value for the model parameters such that the model will generalize well to new instances. We usually train such systems by minimizing a cost function that measures how bad the system is at making predictions on the training data, plus a penalty for model complexity if the model is regularized. To make predictions, we feed the new instance's features into the model's prediction function, using the parameter values found by the learning algorithm.",
+        'references': []
+    },
+    {
+        'question':
+        "Can you name four of the main challenges in machine learning?",
+        'tags': ['handson-ml3', 14],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "Some of the main challenges in Machine Learning are:\n"
+        " * the lack of data\n"
+        " * poor data quality\n"
+        " * nonrepresentative data\n"
+        " * uninformative features\n"
+        " * excessively simple models that underfit the training data\n"
+        " * excessively complex models that overfit the data",
+        'references': []
+    },
+    {
+        'question':
+        "If your model performs great on the training data but generalizes poorly to new instances, what is happening? Can you name three possible solutions?",
+        'tags': ['handson-ml3', 15],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "If a model performs great on the training data but generalizes poorly to new instances, the model is likely overfitting the training data. Possible solutions to overfitting are:\n"
+        " * getting more data\n"
+        " * simplifying the model (selecting a simpler algorithm, reducing the number of parameters or features used, or regularizing the model)\n"
+        " * reducing the noise in the training data.",
+        'references': []
+    },
+    {
+        'question':
+        "What is a test set, and why would you want to use it?",
+        'tags': ['handson-ml3', 16],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "A test set is used to estimate the generalization error that a model will make on new instances, before the model is launched in production.",
+        'references': []
+    },
+    {
+        'question':
+        "What is the purpose of a validation set?",
+        'tags': ['handson-ml3', 17],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "A validation set is used to compare models. It makes it possible to select the best model and tune the hyperparameters.",
+        'references': []
+    },
+    {
+        'question':
+        "What is the train-dev set, when do you need it, and how do you use it?",
+        'tags': ['handson-ml3', 18],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "The train-dev set is used when there is a risk of mismatch between the training data and the data used in the validation and test datasets (which should always be as close as possible to the data used once the model is in production). The train-dev set is a part of the training set that's held out (the model is not trained on it). The model is trained on the rest of the training set, and evaluated on both the train-dev set and the validation set. If the model performs well on the training set but not on the train-dev set, then the model is likely overfitting the training set. If it performs well on both the training set and the train-dev set, but not on the validation set, then there is probably a significant data mismatch between the training data and the validation + test data, and you should try to improve the training data to make it look more like the validation + test data.",
+        'references': []
+    },
+    {
+        'question':
+        "What can go wrong if you tune hyperparameters using the test set?",
+        'tags': ['handson-ml3', 19],
+        'options': {},
+        'answers': [],
+        'explanation':
+        "If you tune hyperparameters using the test set, you risk overfitting the test set, and the generalization error you measure will be optimistic (you may launch a model that performs worse than you expect).",
+        'references': []
     },
 ]
