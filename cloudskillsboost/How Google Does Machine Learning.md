@@ -17,27 +17,27 @@ https://www.cloudskillsboost.google/course_templates/10
 * (`Quiz`) Quiz: What it Means to be AI First
 
 ## 2. How Google Does ML
-* ([Video](https://www.youtube.com/watch?v=wrgj1vbFuUE) - Mar 3, 2022) ([Slide]()) Introduction
-* ([Video](https://www.youtube.com/watch?v=cv_m3rMLwjs) - Mar 3, 2022) ([Slide]()) ML surprise
-* ([Video](https://www.youtube.com/watch?v=N_B-ew2bziM) - Mar 3, 2022) ([Slide]()) The secret sauce
-* ([Video](https://www.youtube.com/watch?v=8-9MmU_0FrA) - Mar 3, 2022) ([Slide]()) ML and business processes
-* ([Video](https://www.youtube.com/watch?v=q-Ca31bsbC0) - Mar 3, 2022) ([Slide]()) The path to ML
-* ([Video](https://www.youtube.com/watch?v=jT5rO9zhFXU) - Mar 3, 2022) ([Slide]()) A closer look at the path
-* ([Video](https://www.youtube.com/watch?v=dVuIWkrXTTI) - Mar 3, 2022) ([Slide]()) End of phases deep dive
+* ([Video](https://www.youtube.com/watch?v=wrgj1vbFuUE) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1IPPk6ntS7OQV_AlDmzQs4yuz5qWhcU4X)) Introduction
+* ([Video](https://www.youtube.com/watch?v=cv_m3rMLwjs) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1Ibmo0mOXiF6XQcSMmgz-8PCrKs47TD_N)) ML surprise
+* ([Video](https://www.youtube.com/watch?v=N_B-ew2bziM) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1Ij_vzskfqpuVgvq3EgQa2oQekhqvJqXo)) The secret sauce
+* ([Video](https://www.youtube.com/watch?v=8-9MmU_0FrA) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1Ijz0lFJx5gSc0FlG0fTn0TkZaxBdE6z3)) ML and business processes
+* ([Video](https://www.youtube.com/watch?v=q-Ca31bsbC0) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1Il1gU1Kp_Jenma4sIaduI0I3AKyjC9qG)) The path to ML
+* ([Video](https://www.youtube.com/watch?v=jT5rO9zhFXU) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1Ip6VnzOlfkUGLi8J4m8lg76MF038b0FR)) A closer look at the path
+* ([Video](https://www.youtube.com/watch?v=dVuIWkrXTTI) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1IrVTCzAvAcnv6grYFKm4x_3v4z6w_IND)) End of phases deep dive
 * (`Quiz`) Quiz: How Google Does ML
 
 ## 3. Machine Learning Development with Vertex AI
-* ([Video](https://www.youtube.com/watch?v=UfQ6N00hy4Y) - Mar 3, 2022) ([Slide]()) Introduction
-* ([Video](https://www.youtube.com/watch?v=AcoWP0Px2uE) - Mar 3, 2022) ([Slide]()) Moving from experimentation to production
-* ([Video](https://www.youtube.com/watch?v=CrUUgyrzKq0) - Mar 3, 2022) ([Slide]()) Components of Vertex AI
-* ([Video](https://www.youtube.com/watch?v=sj2or8iseHk) - Jan 29, 2021) ([Slide]()) Pluralsight: Getting Started with GCP and Qwiklabs
-* ([Video](https://www.youtube.com/watch?v=Rs4AzqQtVqM) - Mar 3, 2022) ([Slide]()) Lab intro: Using an image dataset to train an AutoML model
-* ([Video](https://www.youtube.com/watch?v=XwpkK0QLnzo) - Mar 3, 2022) ([Slide]()) Lab demo: Using an image dataset to train an AutoML model
+* ([Video](https://www.youtube.com/watch?v=UfQ6N00hy4Y) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1IrZ7zys1jUrwkb4tUhTahHZE4skUwQ89)) Introduction
+* ([Video](https://www.youtube.com/watch?v=AcoWP0Px2uE) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1It-v9Q4zXbYmrWlADmMv3qCnWcrzQdbW)) Moving from experimentation to production
+* ([Video](https://www.youtube.com/watch?v=CrUUgyrzKq0) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1Iu2d_btjul0_ePhSTIx_qHe8tosNlbEr)) Components of Vertex AI
+* ([Video](https://www.youtube.com/watch?v=sj2or8iseHk) - Jan 29, 2021)  Pluralsight: Getting Started with GCP and Qwiklabs
+* ([Video](https://www.youtube.com/watch?v=Rs4AzqQtVqM) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1J3BO1XPC9_ZUQBTqF-C9ilggrpPm1Frr)) Lab intro: Using an image dataset to train an AutoML model
+* ([Video](https://www.youtube.com/watch?v=XwpkK0QLnzo) - Mar 3, 2022) Lab demo: Using an image dataset to train an AutoML model
 * (`Lab`) Using an Image Dataset to Train an AutoML Model
-* ([Video](https://www.youtube.com/watch?v=iViuvGaD51s) - Mar 3, 2022) ([Slide]()) Lab intro: Training an AutoML video classification model
-* ([Video](https://www.youtube.com/watch?v=BbF03Rb_0ms) - Mar 3, 2022) ([Slide]()) Lab demo: Training an AutoML video classification model
+* ([Video](https://www.youtube.com/watch?v=iViuvGaD51s) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1J5B0f2x4uzqEC1ah1q5ky9E4pYAAvb3J)) Lab intro: Training an AutoML video classification model
+* ([Video](https://www.youtube.com/watch?v=BbF03Rb_0ms) - Mar 3, 2022) Lab demo: Training an AutoML video classification model
 * (`Lab`) Training an AutoML Video Classification Model
-* ([Video](https://www.youtube.com/watch?v=XiQ60eIFE7c) - Mar 3, 2022) ([Slide]()) Tools to interact with Vertex AI
+* ([Video](https://www.youtube.com/watch?v=XiQ60eIFE7c) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1J6AclcxXJemuYvUoSfu2Ew_Lc33eDI8H)) Tools to interact with Vertex AI
 * (`Quiz`) Quiz: Machine Learning Development with Vertex AI
 
 ## 4. Machine Learning Development with Vertex Notebooks

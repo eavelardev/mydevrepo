@@ -17,6 +17,7 @@
     * 35, 47 month, 348 year (29 month) - [link](https://acloudguru.com/pricing)
 - **Coursera**
     * 59 month, 399 year (33.25 month) - [link](https://www.coursera.org/courseraplus)
+    * MX$3,857 year (MX$321 month) promo january 31
 - **RealLife**
     * 119.97 Full Course 41 week of lessons
     * 337.97/165.6 promotion - Get Fluent with Friends
