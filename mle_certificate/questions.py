@@ -5545,7 +5545,8 @@ questions = [
         'explanation':
         "* gcloud config get-value project\n"
         "* gcloud config get-value core/project\n"
-        "* gcloud info --format='value(config.project)'",
+        "* gcloud info --format='value(config.project)'"
+        "* gcloud config list --format 'value(core.project)'",
         'references': []
     },
     {
