@@ -1,5 +1,5 @@
-* ([Video]() -  - `American`) ([Slide]()) 
-* ([Video]() -  - `American`) 
+* ([Video]() - ) ([Slide]()) 
+* ([Video]() - ) 
 
 * ([Lab]()) 
     * []()
