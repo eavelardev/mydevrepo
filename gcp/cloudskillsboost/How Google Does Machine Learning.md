@@ -31,10 +31,10 @@ https://www.cloudskillsboost.google/course_templates/10
 * ([Video](https://www.youtube.com/watch?v=sj2or8iseHk) - Jan 29, 2021)  Pluralsight: Getting Started with GCP and Qwiklabs
 * ([Video](https://www.youtube.com/watch?v=Rs4AzqQtVqM) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1J3BO1XPC9_ZUQBTqF-C9ilggrpPm1Frr)) Lab intro: Using an image dataset to train an AutoML model
 * ([Video](https://www.youtube.com/watch?v=XwpkK0QLnzo) - Mar 3, 2022 - Latin) Lab demo: Using an image dataset to train an AutoML model
-* ([Lab](https://www.cloudskillsboost.google/course_sessions/1221586/labs/340697)) Using an Image Dataset to Train an AutoML Model
+* ([Lab](https://www.cloudskillsboost.google/course_sessions/1221586/labs/340697)) `Using an Image Dataset to Train an AutoML Model`
 * ([Video](https://www.youtube.com/watch?v=iViuvGaD51s) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1J5B0f2x4uzqEC1ah1q5ky9E4pYAAvb3J)) Lab intro: Training an AutoML video classification model
 * ([Video](https://www.youtube.com/watch?v=BbF03Rb_0ms) - Mar 3, 2022 - Latin) Lab demo: Training an AutoML video classification model
-* ([Lab](https://www.cloudskillsboost.google/course_sessions/1221586/labs/340700)) Training an AutoML Video Classification Model
+* ([Lab](https://www.cloudskillsboost.google/course_sessions/1221586/labs/340700)) `Training an AutoML Video Classification Model`
 * ([Video](https://www.youtube.com/watch?v=XiQ60eIFE7c) - Mar 3, 2022 - British) ([Slide](https://docs.google.com/presentation/d/1J6AclcxXJemuYvUoSfu2Ew_Lc33eDI8H)) Tools to interact with Vertex AI
 
 ## 4. Machine Learning Development with Vertex Notebooks
@@ -42,8 +42,10 @@ https://www.cloudskillsboost.google/course_templates/10
 * ([Video](https://www.youtube.com/watch?v=maE3CNLZMv4) - Mar 3, 2022 - British) ([Slide](https://docs.google.com/presentation/d/1JMr0Ch6Kar3h5epnwMPzXsYRqgeZaIF2)) Machine learning development with Vertex Notebooks
 * ([Video](https://www.youtube.com/watch?v=Zy5-8iSNCRY) - Mar 3, 2022) ([Slide](https://docs.google.com/presentation/d/1JYb-j0_lNy9teGDW1EToDI_lk1DzBO0j)) (Optional) Lab intro: Vertex AI Model Builder SDK: Training and Making Predictions on an AutoML Model
 * ([Video](https://www.youtube.com/watch?v=-sQt4MsTbJs) - Mar 3, 2022 - Latin) (Optional) Lab demo: Vertex AI Model Builder SDK: Training and Making Predictions on an AutoML Model
-* ([Lab](https://www.cloudskillsboost.google/course_sessions/1221586/labs/340708)) Vertex AI Model Builder SDK: Training and Making Predictions on an AutoML Model
-    * [how_google_does_ml/labs/automl-tabular-classification.ipynb](https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/how_google_does_ml/labs/automl-tabular-classification.ipynb)
+* ([Lab](https://www.cloudskillsboost.google/course_sessions/1221586/labs/340708)) `Vertex AI Model Builder SDK: Training and Making Predictions on an AutoML Model`
+    * training-data-analyst/courses/machine_learning/deepdive2/how_google_does_ml/
+        * labs/[automl-tabular-classification.ipynb](https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/how_google_does_ml/labs/automl-tabular-classification.ipynb)
+        * solutions/[automl-tabular-classification.ipynb](https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/how_google_does_ml/solutions/automl-tabular-classification.ipynb)
 
 ## 5. Best Practices for Implementing Machine Learning on Vertex AI
 * ([Video](https://www.youtube.com/watch?v=hIxExVLY93A) - Mar 3, 2022 - British) ([Slide](https://docs.google.com/presentation/d/1JbxHxhCP4P7pBrOoAwAyPM2Nbz5IQmyl)) Introduction

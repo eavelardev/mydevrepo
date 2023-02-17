@@ -1,9 +1,10 @@
 * ([Video]() - ) ([Slide]()) 
 * ([Video]() - ) 
 
-* ([Lab]()) 
-    * []()
-    * []()
+* ([Lab]()) ``
+    * 
+        * labs/[]()
+        * solutions/[]()
 
 * ([Document]()) 
 
