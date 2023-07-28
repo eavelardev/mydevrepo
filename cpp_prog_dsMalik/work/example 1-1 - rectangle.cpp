@@ -4,17 +4,17 @@ using namespace std;
 
 int main()
 {
-    float lenght, width;
+    float length, width;
     float perimeter, area;
 
-    cout << "Lenght: ";
-    cin >> lenght;
+    cout << "Length: ";
+    cin >> length;
 
     cout << "Width: ";
     cin >> width;
 
-    perimeter = 2 * (lenght + width);
-    area = lenght * width;
+    perimeter = 2 * (length + width);
+    area = length * width;
 
     cout << "Perimeter: " << perimeter << endl;
     cout << "Area: " << area << endl;
